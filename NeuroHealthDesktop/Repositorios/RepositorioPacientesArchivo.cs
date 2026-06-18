@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Net;
 
 namespace NeuroHealthDesktop.Repositorios
 {
@@ -15,6 +16,19 @@ namespace NeuroHealthDesktop.Repositorios
         public void Agregar(Paciente paciente)
         {
             // TODO: Agregar paciente al archivo.
+
+            if ((paciente != null) && (paciente.Tipo == TipoPaciente.Guardia))
+            {   
+                PacienteGuardia PG = new PacienteGuardia(paciente.Dni, paciente.NombreApellido, paciente.Edad, paciente.Motivo, paciente.Signos, true);
+                using (StreamWriter write = new StreamWriter(rutaArchivo, true))
+                {
+                    write.WriteLine($"{paciente.Tipo} | {paciente.Dni} | {paciente.NombreApellido} | {paciente.Edad} | {paciente.Motivo} | {paciente.Signos} | {paciente.FechaIngreso} | {paciente.Nivel}");
+                }
+            }
+            else
+            {
+
+            }
         }
 
         public List<Paciente> ObtenerTodos()

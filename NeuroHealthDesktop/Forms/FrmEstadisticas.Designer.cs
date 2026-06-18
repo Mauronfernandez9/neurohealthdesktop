@@ -58,7 +58,7 @@
             // 
             lblTitulo.AutoSize = true;
             lblTitulo.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
-            lblTitulo.Location = new Point(22, 18);
+            lblTitulo.Location = new Point(22, 20);
             lblTitulo.Name = "lblTitulo";
             lblTitulo.Size = new Size(256, 30);
             lblTitulo.TabIndex = 0;
@@ -67,18 +67,18 @@
             // lblAyuda
             // 
             lblAyuda.AutoSize = true;
-            lblAyuda.Location = new Point(25, 55);
+            lblAyuda.Location = new Point(25, 62);
             lblAyuda.Name = "lblAyuda";
-            lblAyuda.Size = new Size(392, 15);
+            lblAyuda.Size = new Size(441, 17);
             lblAyuda.TabIndex = 1;
             lblAyuda.Text = "Aquí se mostrarán los indicadores calculados por el servicio de pacientes.";
             // 
             // lblEnEspera
             // 
             lblEnEspera.AutoSize = true;
-            lblEnEspera.Location = new Point(35, 100);
+            lblEnEspera.Location = new Point(35, 113);
             lblEnEspera.Name = "lblEnEspera";
-            lblEnEspera.Size = new Size(110, 15);
+            lblEnEspera.Size = new Size(124, 17);
             lblEnEspera.TabIndex = 2;
             lblEnEspera.Text = "Pacientes en espera";
             // 
@@ -86,7 +86,7 @@
             // 
             lblEnEsperaValor.AutoSize = true;
             lblEnEsperaValor.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            lblEnEsperaValor.Location = new Point(300, 100);
+            lblEnEsperaValor.Location = new Point(300, 113);
             lblEnEsperaValor.Name = "lblEnEsperaValor";
             lblEnEsperaValor.Size = new Size(14, 15);
             lblEnEsperaValor.TabIndex = 3;
@@ -95,9 +95,9 @@
             // lblAdmitidos
             // 
             lblAdmitidos.AutoSize = true;
-            lblAdmitidos.Location = new Point(35, 134);
+            lblAdmitidos.Location = new Point(35, 152);
             lblAdmitidos.Name = "lblAdmitidos";
-            lblAdmitidos.Size = new Size(113, 15);
+            lblAdmitidos.Size = new Size(124, 17);
             lblAdmitidos.TabIndex = 4;
             lblAdmitidos.Text = "Pacientes admitidos";
             // 
@@ -105,7 +105,7 @@
             // 
             lblAdmitidosValor.AutoSize = true;
             lblAdmitidosValor.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            lblAdmitidosValor.Location = new Point(300, 134);
+            lblAdmitidosValor.Location = new Point(300, 152);
             lblAdmitidosValor.Name = "lblAdmitidosValor";
             lblAdmitidosValor.Size = new Size(14, 15);
             lblAdmitidosValor.TabIndex = 5;
@@ -114,9 +114,9 @@
             // lblVerdes
             // 
             lblVerdes.AutoSize = true;
-            lblVerdes.Location = new Point(35, 168);
+            lblVerdes.Location = new Point(35, 190);
             lblVerdes.Name = "lblVerdes";
-            lblVerdes.Size = new Size(94, 15);
+            lblVerdes.Size = new Size(105, 17);
             lblVerdes.TabIndex = 6;
             lblVerdes.Text = "Pacientes verdes";
             // 
@@ -124,7 +124,7 @@
             // 
             lblVerdesValor.AutoSize = true;
             lblVerdesValor.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            lblVerdesValor.Location = new Point(300, 168);
+            lblVerdesValor.Location = new Point(300, 190);
             lblVerdesValor.Name = "lblVerdesValor";
             lblVerdesValor.Size = new Size(14, 15);
             lblVerdesValor.TabIndex = 7;
@@ -133,9 +133,9 @@
             // lblAmarillos
             // 
             lblAmarillos.AutoSize = true;
-            lblAmarillos.Location = new Point(35, 202);
+            lblAmarillos.Location = new Point(35, 229);
             lblAmarillos.Name = "lblAmarillos";
-            lblAmarillos.Size = new Size(108, 15);
+            lblAmarillos.Size = new Size(119, 17);
             lblAmarillos.TabIndex = 8;
             lblAmarillos.Text = "Pacientes amarillos";
             // 
@@ -143,7 +143,7 @@
             // 
             lblAmarillosValor.AutoSize = true;
             lblAmarillosValor.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            lblAmarillosValor.Location = new Point(300, 202);
+            lblAmarillosValor.Location = new Point(300, 229);
             lblAmarillosValor.Name = "lblAmarillosValor";
             lblAmarillosValor.Size = new Size(14, 15);
             lblAmarillosValor.TabIndex = 9;
@@ -152,9 +152,9 @@
             // lblRojos
             // 
             lblRojos.AutoSize = true;
-            lblRojos.Location = new Point(35, 236);
+            lblRojos.Location = new Point(35, 267);
             lblRojos.Name = "lblRojos";
-            lblRojos.Size = new Size(86, 15);
+            lblRojos.Size = new Size(96, 17);
             lblRojos.TabIndex = 10;
             lblRojos.Text = "Pacientes rojos";
             // 
@@ -162,7 +162,7 @@
             // 
             lblRojosValor.AutoSize = true;
             lblRojosValor.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            lblRojosValor.Location = new Point(300, 236);
+            lblRojosValor.Location = new Point(300, 267);
             lblRojosValor.Name = "lblRojosValor";
             lblRojosValor.Size = new Size(14, 15);
             lblRojosValor.TabIndex = 11;
@@ -171,9 +171,9 @@
             // lblEdadPromedio
             // 
             lblEdadPromedio.AutoSize = true;
-            lblEdadPromedio.Location = new Point(35, 270);
+            lblEdadPromedio.Location = new Point(35, 306);
             lblEdadPromedio.Name = "lblEdadPromedio";
-            lblEdadPromedio.Size = new Size(88, 15);
+            lblEdadPromedio.Size = new Size(100, 17);
             lblEdadPromedio.TabIndex = 12;
             lblEdadPromedio.Text = "Edad promedio";
             // 
@@ -181,7 +181,7 @@
             // 
             lblEdadPromedioValor.AutoSize = true;
             lblEdadPromedioValor.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            lblEdadPromedioValor.Location = new Point(300, 270);
+            lblEdadPromedioValor.Location = new Point(300, 306);
             lblEdadPromedioValor.Name = "lblEdadPromedioValor";
             lblEdadPromedioValor.Size = new Size(14, 15);
             lblEdadPromedioValor.TabIndex = 13;
@@ -190,9 +190,9 @@
             // lblPorcentajeCriticos
             // 
             lblPorcentajeCriticos.AutoSize = true;
-            lblPorcentajeCriticos.Location = new Point(35, 304);
+            lblPorcentajeCriticos.Location = new Point(35, 345);
             lblPorcentajeCriticos.Name = "lblPorcentajeCriticos";
-            lblPorcentajeCriticos.Size = new Size(104, 15);
+            lblPorcentajeCriticos.Size = new Size(114, 17);
             lblPorcentajeCriticos.TabIndex = 14;
             lblPorcentajeCriticos.Text = "Porcentaje críticos";
             // 
@@ -200,7 +200,7 @@
             // 
             lblPorcentajeCriticosValor.AutoSize = true;
             lblPorcentajeCriticosValor.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            lblPorcentajeCriticosValor.Location = new Point(300, 304);
+            lblPorcentajeCriticosValor.Location = new Point(300, 345);
             lblPorcentajeCriticosValor.Name = "lblPorcentajeCriticosValor";
             lblPorcentajeCriticosValor.Size = new Size(14, 15);
             lblPorcentajeCriticosValor.TabIndex = 15;
@@ -208,19 +208,20 @@
             // 
             // btnActualizar
             // 
-            btnActualizar.Location = new Point(35, 365);
+            btnActualizar.Location = new Point(35, 414);
             btnActualizar.Name = "btnActualizar";
-            btnActualizar.Size = new Size(160, 38);
+            btnActualizar.Size = new Size(160, 43);
             btnActualizar.TabIndex = 16;
-            btnActualizar.Text = "Aquí puede ir: Actualizar";
+            btnActualizar.Tag = "btnActualizar";
+            btnActualizar.Text = "Actualizar";
             btnActualizar.UseVisualStyleBackColor = true;
             btnActualizar.Click += btnActualizar_Click;
             // 
             // btnCerrar
             // 
-            btnCerrar.Location = new Point(215, 365);
+            btnCerrar.Location = new Point(215, 414);
             btnCerrar.Name = "btnCerrar";
-            btnCerrar.Size = new Size(160, 38);
+            btnCerrar.Size = new Size(160, 43);
             btnCerrar.TabIndex = 17;
             btnCerrar.Text = "Cerrar";
             btnCerrar.UseVisualStyleBackColor = true;
@@ -228,9 +229,9 @@
             // 
             // FrmEstadisticas
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(470, 435);
+            ClientSize = new Size(470, 493);
             Controls.Add(lblTitulo);
             Controls.Add(lblAyuda);
             Controls.Add(lblEnEspera);

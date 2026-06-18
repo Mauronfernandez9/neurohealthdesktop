@@ -56,5 +56,10 @@ namespace NeuroHealthDesktop.Forms
         {
             Close();
         }
+
+        private void txtDni_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

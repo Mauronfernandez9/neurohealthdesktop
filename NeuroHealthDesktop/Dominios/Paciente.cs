@@ -27,7 +27,7 @@
         public virtual string ObtenerDescripcion()
         {
             // TODO: Completar una descripción general del paciente.
-            return $"{Dni} - {NombreApellido}";
+            return $"{Dni} - {NombreApellido} - {Edad} - {Motivo} - {Signos} - {FechaIngreso} - {Nivel}";
         }
     }
 }

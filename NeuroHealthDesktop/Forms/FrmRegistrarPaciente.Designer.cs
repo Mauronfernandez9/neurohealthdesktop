@@ -82,7 +82,7 @@
             // 
             lblTitulo.AutoSize = true;
             lblTitulo.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
-            lblTitulo.Location = new Point(22, 18);
+            lblTitulo.Location = new Point(22, 20);
             lblTitulo.Name = "lblTitulo";
             lblTitulo.Size = new Size(348, 30);
             lblTitulo.TabIndex = 0;
@@ -91,221 +91,225 @@
             // lblDni
             // 
             lblDni.AutoSize = true;
-            lblDni.Location = new Point(30, 92);
+            lblDni.Location = new Point(30, 104);
             lblDni.Name = "lblDni";
-            lblDni.Size = new Size(27, 15);
+            lblDni.Size = new Size(30, 17);
             lblDni.TabIndex = 2;
             lblDni.Text = "DNI";
             // 
             // lblNombreApellido
             // 
             lblNombreApellido.AutoSize = true;
-            lblNombreApellido.Location = new Point(30, 126);
+            lblNombreApellido.Location = new Point(30, 143);
             lblNombreApellido.Name = "lblNombreApellido";
-            lblNombreApellido.Size = new Size(105, 15);
+            lblNombreApellido.Size = new Size(116, 17);
             lblNombreApellido.TabIndex = 4;
             lblNombreApellido.Text = "Apellido y nombre";
             // 
             // lblEdad
             // 
             lblEdad.AutoSize = true;
-            lblEdad.Location = new Point(30, 160);
+            lblEdad.Location = new Point(30, 181);
             lblEdad.Name = "lblEdad";
-            lblEdad.Size = new Size(33, 15);
+            lblEdad.Size = new Size(38, 17);
             lblEdad.TabIndex = 6;
             lblEdad.Text = "Edad";
             // 
             // lblMotivo
             // 
             lblMotivo.AutoSize = true;
-            lblMotivo.Location = new Point(30, 194);
+            lblMotivo.Location = new Point(30, 220);
             lblMotivo.Name = "lblMotivo";
-            lblMotivo.Size = new Size(45, 15);
+            lblMotivo.Size = new Size(49, 17);
             lblMotivo.TabIndex = 8;
             lblMotivo.Text = "Motivo";
             // 
             // lblPulso
             // 
             lblPulso.AutoSize = true;
-            lblPulso.Location = new Point(550, 92);
+            lblPulso.Location = new Point(550, 104);
             lblPulso.Name = "lblPulso";
-            lblPulso.Size = new Size(36, 15);
+            lblPulso.Size = new Size(39, 17);
             lblPulso.TabIndex = 15;
             lblPulso.Text = "Pulso";
             // 
             // lblTemperatura
             // 
             lblTemperatura.AutoSize = true;
-            lblTemperatura.Location = new Point(550, 126);
+            lblTemperatura.Location = new Point(550, 143);
             lblTemperatura.Name = "lblTemperatura";
-            lblTemperatura.Size = new Size(74, 15);
+            lblTemperatura.Size = new Size(82, 17);
             lblTemperatura.TabIndex = 17;
             lblTemperatura.Text = "Temperatura";
             // 
             // lblPresion
             // 
             lblPresion.AutoSize = true;
-            lblPresion.Location = new Point(550, 160);
+            lblPresion.Location = new Point(550, 181);
             lblPresion.Name = "lblPresion";
-            lblPresion.Size = new Size(46, 15);
+            lblPresion.Size = new Size(51, 17);
             lblPresion.TabIndex = 19;
             lblPresion.Text = "Presión";
             // 
             // lblSaturacion
             // 
             lblSaturacion.AutoSize = true;
-            lblSaturacion.Location = new Point(550, 194);
+            lblSaturacion.Location = new Point(550, 220);
             lblSaturacion.Name = "lblSaturacion";
-            lblSaturacion.Size = new Size(63, 15);
+            lblSaturacion.Size = new Size(69, 17);
             lblSaturacion.TabIndex = 21;
             lblSaturacion.Text = "Saturación";
             // 
             // lblDolor
             // 
             lblDolor.AutoSize = true;
-            lblDolor.Location = new Point(550, 228);
+            lblDolor.Location = new Point(550, 258);
             lblDolor.Name = "lblDolor";
-            lblDolor.Size = new Size(36, 15);
+            lblDolor.Size = new Size(41, 17);
             lblDolor.TabIndex = 23;
             lblDolor.Text = "Dolor";
             // 
             // lblTipoPaciente
             // 
             lblTipoPaciente.AutoSize = true;
-            lblTipoPaciente.Location = new Point(30, 228);
+            lblTipoPaciente.Location = new Point(30, 258);
             lblTipoPaciente.Name = "lblTipoPaciente";
-            lblTipoPaciente.Size = new Size(95, 15);
+            lblTipoPaciente.Size = new Size(106, 17);
             lblTipoPaciente.TabIndex = 10;
             lblTipoPaciente.Text = "Tipo de paciente";
             // 
             // lblAdultoResponsable
             // 
             lblAdultoResponsable.AutoSize = true;
-            lblAdultoResponsable.Location = new Point(30, 296);
+            lblAdultoResponsable.Location = new Point(30, 335);
             lblAdultoResponsable.Name = "lblAdultoResponsable";
-            lblAdultoResponsable.Size = new Size(109, 15);
+            lblAdultoResponsable.Size = new Size(122, 17);
             lblAdultoResponsable.TabIndex = 13;
             lblAdultoResponsable.Text = "Adulto responsable";
             // 
             // lblAyuda
             // 
             lblAyuda.AutoSize = true;
-            lblAyuda.Location = new Point(25, 55);
+            lblAyuda.Location = new Point(25, 62);
             lblAyuda.Name = "lblAyuda";
-            lblAyuda.Size = new Size(608, 15);
+            lblAyuda.Size = new Size(680, 17);
             lblAyuda.TabIndex = 1;
             lblAyuda.Text = "Formulario base. Aquí los alumnos deberán completar validaciones, carga de datos y creación del objeto paciente.";
             // 
             // txtDni
             // 
-            txtDni.Location = new Point(190, 89);
+            txtDni.Location = new Point(190, 101);
             txtDni.Name = "txtDni";
-            txtDni.Size = new Size(210, 23);
+            txtDni.Size = new Size(210, 25);
             txtDni.TabIndex = 3;
+            txtDni.Tag = "txtDni";
+            txtDni.TextChanged += txtDni_TextChanged;
             // 
             // txtNombreApellido
             // 
-            txtNombreApellido.Location = new Point(190, 123);
+            txtNombreApellido.Location = new Point(190, 139);
             txtNombreApellido.Name = "txtNombreApellido";
-            txtNombreApellido.Size = new Size(300, 23);
+            txtNombreApellido.Size = new Size(300, 25);
             txtNombreApellido.TabIndex = 5;
             // 
             // txtPresion
             // 
-            txtPresion.Location = new Point(700, 157);
+            txtPresion.Location = new Point(700, 178);
             txtPresion.Name = "txtPresion";
-            txtPresion.Size = new Size(160, 23);
+            txtPresion.Size = new Size(160, 25);
             txtPresion.TabIndex = 20;
             // 
             // txtAdultoResponsable
             // 
-            txtAdultoResponsable.Location = new Point(190, 293);
+            txtAdultoResponsable.Location = new Point(190, 332);
             txtAdultoResponsable.Name = "txtAdultoResponsable";
-            txtAdultoResponsable.Size = new Size(300, 23);
+            txtAdultoResponsable.Size = new Size(300, 25);
             txtAdultoResponsable.TabIndex = 14;
             // 
             // nudEdad
             // 
-            nudEdad.Location = new Point(190, 157);
+            nudEdad.Location = new Point(190, 178);
             nudEdad.Maximum = new decimal(new int[] { 120, 0, 0, 0 });
             nudEdad.Name = "nudEdad";
-            nudEdad.Size = new Size(120, 23);
+            nudEdad.Size = new Size(120, 25);
             nudEdad.TabIndex = 7;
             // 
             // nudPulso
             // 
-            nudPulso.Location = new Point(700, 89);
+            nudPulso.Location = new Point(700, 101);
             nudPulso.Maximum = new decimal(new int[] { 250, 0, 0, 0 });
             nudPulso.Name = "nudPulso";
-            nudPulso.Size = new Size(120, 23);
+            nudPulso.Size = new Size(120, 25);
             nudPulso.TabIndex = 16;
             // 
             // nudTemperatura
             // 
             nudTemperatura.DecimalPlaces = 1;
-            nudTemperatura.Location = new Point(700, 123);
+            nudTemperatura.Location = new Point(700, 139);
             nudTemperatura.Maximum = new decimal(new int[] { 50, 0, 0, 0 });
             nudTemperatura.Name = "nudTemperatura";
-            nudTemperatura.Size = new Size(120, 23);
+            nudTemperatura.Size = new Size(120, 25);
             nudTemperatura.TabIndex = 18;
             // 
             // nudSaturacion
             // 
-            nudSaturacion.Location = new Point(700, 191);
+            nudSaturacion.Location = new Point(700, 216);
             nudSaturacion.Name = "nudSaturacion";
-            nudSaturacion.Size = new Size(120, 23);
+            nudSaturacion.Size = new Size(120, 25);
             nudSaturacion.TabIndex = 22;
             // 
             // nudDolor
             // 
-            nudDolor.Location = new Point(700, 225);
+            nudDolor.Location = new Point(700, 255);
             nudDolor.Maximum = new decimal(new int[] { 10, 0, 0, 0 });
             nudDolor.Name = "nudDolor";
-            nudDolor.Size = new Size(120, 23);
+            nudDolor.Size = new Size(120, 25);
             nudDolor.TabIndex = 24;
             // 
             // cmbMotivo
             // 
             cmbMotivo.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbMotivo.Location = new Point(190, 191);
+            cmbMotivo.Location = new Point(190, 216);
             cmbMotivo.Name = "cmbMotivo";
-            cmbMotivo.Size = new Size(210, 23);
+            cmbMotivo.Size = new Size(210, 25);
             cmbMotivo.TabIndex = 9;
             // 
             // cmbTipoPaciente
             // 
             cmbTipoPaciente.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbTipoPaciente.Location = new Point(190, 225);
+            cmbTipoPaciente.Location = new Point(190, 255);
             cmbTipoPaciente.Name = "cmbTipoPaciente";
-            cmbTipoPaciente.Size = new Size(210, 23);
+            cmbTipoPaciente.Size = new Size(210, 25);
             cmbTipoPaciente.TabIndex = 11;
             cmbTipoPaciente.SelectedIndexChanged += cmbTipoPaciente_SelectedIndexChanged;
             // 
             // chkRequiereCamilla
             // 
             chkRequiereCamilla.AutoSize = true;
-            chkRequiereCamilla.Location = new Point(190, 259);
+            chkRequiereCamilla.Location = new Point(190, 294);
             chkRequiereCamilla.Name = "chkRequiereCamilla";
-            chkRequiereCamilla.Size = new Size(187, 19);
+            chkRequiereCamilla.Size = new Size(123, 21);
             chkRequiereCamilla.TabIndex = 12;
-            chkRequiereCamilla.Text = "Aquí puede ir: requiere camilla";
+            chkRequiereCamilla.Tag = "chkRequiereCamilla";
+            chkRequiereCamilla.Text = "Requiere camilla";
             chkRequiereCamilla.UseVisualStyleBackColor = true;
             // 
             // btnGuardar
             // 
-            btnGuardar.Location = new Point(550, 300);
+            btnGuardar.Location = new Point(550, 340);
             btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(150, 38);
+            btnGuardar.Size = new Size(150, 43);
             btnGuardar.TabIndex = 25;
-            btnGuardar.Text = "Aquí puede ir: Guardar";
+            btnGuardar.Tag = "btnGuardar";
+            btnGuardar.Text = "Guardar";
             btnGuardar.UseVisualStyleBackColor = true;
             btnGuardar.Click += btnGuardar_Click;
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(720, 300);
+            btnCancelar.Location = new Point(720, 340);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(150, 38);
+            btnCancelar.Size = new Size(150, 43);
             btnCancelar.TabIndex = 26;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
@@ -313,9 +317,9 @@
             // 
             // FrmRegistrarPaciente
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(910, 370);
+            ClientSize = new Size(910, 419);
             Controls.Add(lblTitulo);
             Controls.Add(lblAyuda);
             Controls.Add(lblDni);

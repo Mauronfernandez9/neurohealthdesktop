@@ -1,14 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Usuario\\source\\repos\\NeuroHealthDesktop\\",
+  "WorkspaceRootPath": "C:\\Users\\tomic\\COSAS\\AESTUDIO\\ESTUDIO\\UPSO\\2do A\u00F1o - PRIMER CUATRISMESTRE\\C# .NET\\neurohealthdesktop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|c:\\users\\usuario\\source\\repos\\neurohealthdesktop\\neurohealthdesktop\\neurohealthdesktop.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|solutionrelative:neurohealthdesktop\\neurohealthdesktop.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|c:\\users\\usuario\\source\\repos\\neurohealthdesktop\\neurohealthdesktop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|solutionrelative:neurohealthdesktop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|c:\\users\\tomic\\cosas\\aestudio\\estudio\\upso\\2do a\u00F1o - primer cuatrismestre\\c# .net\\neurohealthdesktop\\neurohealthdesktop\\repositorios\\repositoriopacientesarchivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|solutionrelative:neurohealthdesktop\\repositorios\\repositoriopacientesarchivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,36 +14,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "NeuroHealthDesktop",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\NeuroHealthDesktop\\NeuroHealthDesktop\\NeuroHealthDesktop.csproj",
-              "RelativeDocumentMoniker": "NeuroHealthDesktop\\NeuroHealthDesktop.csproj",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\NeuroHealthDesktop\\NeuroHealthDesktop\\NeuroHealthDesktop.csproj",
-              "RelativeToolTip": "NeuroHealthDesktop\\NeuroHealthDesktop.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-06-15T17:08:45.556Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\NeuroHealthDesktop\\NeuroHealthDesktop\\Program.cs",
-              "RelativeDocumentMoniker": "NeuroHealthDesktop\\Program.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\NeuroHealthDesktop\\NeuroHealthDesktop\\Program.cs",
-              "RelativeToolTip": "NeuroHealthDesktop\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "RepositorioPacientesArchivo.cs",
+              "DocumentMoniker": "C:\\Users\\tomic\\COSAS\\AESTUDIO\\ESTUDIO\\UPSO\\2do A\u00F1o - PRIMER CUATRISMESTRE\\C# .NET\\neurohealthdesktop\\NeuroHealthDesktop\\Repositorios\\RepositorioPacientesArchivo.cs",
+              "RelativeDocumentMoniker": "NeuroHealthDesktop\\Repositorios\\RepositorioPacientesArchivo.cs",
+              "ToolTip": "C:\\Users\\tomic\\COSAS\\AESTUDIO\\ESTUDIO\\UPSO\\2do A\u00F1o - PRIMER CUATRISMESTRE\\C# .NET\\neurohealthdesktop\\NeuroHealthDesktop\\Repositorios\\RepositorioPacientesArchivo.cs",
+              "RelativeToolTip": "NeuroHealthDesktop\\Repositorios\\RepositorioPacientesArchivo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-15T16:58:32.691Z",
+              "WhenOpened": "2026-06-18T21:55:40.965Z",
               "EditorCaption": ""
             }
           ]

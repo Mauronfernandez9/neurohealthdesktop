@@ -1,0 +1,8 @@
+Guardia|30111222|Ana Perez|45|DolorToracico|125|38.7|130/80|89|9|2026-06-08 15:30:00|Rojo|True|
+Pediatrico|40111222|Juan Gomez|10|Fiebre|110|38.5|110/70|95|7|2026-06-08 15:35:00|Amarillo||Maria Gomez
+Guardia|28555444|Carlos Rodriguez|62|DificultadRespiratoria|118|37.8|140/90|92|5|2026-06-08 16:05:00|Amarillo|True|
+Pediatrico|45123456|Lucia Fernandez|8|ControlGeneral|85|36.6|100/60|98|1|2026-06-08 16:20:00|Verde||Paula Fernandez
+Guardia|33222111|Marcos Silva|38|Traumatismo|90|36.8|120/80|97|8|2026-06-08 16:40:00|Amarillo|False|
+Pediatrico|47111222|Tomas Alvarez|6|Cefalea|78|36.7|100/65|99|3|2026-06-08 17:00:00|SinEvaluar||Romina Alvarez
+Guardia|25666777|Beatriz Molina|70|DolorAbdominal|130|39.2|150/95|91|9|2026-06-08 17:10:00|Rojo|True|
+Pediatrico|46222333|Sofia Torres|12|DolorAbdominal|88|37.2|105/65|96|4|2026-06-08 17:30:00|SinEvaluar||Andrea Torres
