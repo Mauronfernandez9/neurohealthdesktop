@@ -8,43 +8,74 @@ namespace NeuroHealthDesktop.Repositorios
 
         public RepositorioObservacionesArchivo()
         {
-            // TODO: Crear carpeta Datos y definir ruta de observaciones.txt.
             rutaArchivo = "observaciones.txt";
         }
 
         public void Agregar(Observacion observacion)
         {
-            // TODO: Agregar observación al archivo.
+            observacion.Id = ObtenerProximoId();
+
+            using (StreamWriter writer = new StreamWriter(rutaArchivo, true))
+            {
+                writer.WriteLine(ConvertirObservacionALinea(observacion));
+            }
         }
 
         public List<Observacion> ObtenerTodas()
         {
-            // TODO: Leer observaciones desde archivo.
-            return new List<Observacion>();
+
+            List<Observacion> lista = new List<Observacion>();
+
+            if (!File.Exists(rutaArchivo))
+                return lista;
+
+            foreach (var linea in File.ReadAllLines(rutaArchivo))
+            {
+                var obs = ConvertirLineaAObservacion(linea);
+                if (obs != null)
+                    lista.Add(obs);
+            }
+
+            return lista;
+
         }
 
         public List<Observacion> ObtenerPorDniPaciente(long dniPaciente)
         {
-            // TODO: Filtrar observaciones por DNI del paciente.
-            return new List<Observacion>();
+            return ObtenerTodas()
+       .Where(o => o.DniPaciente == dniPaciente)
+       .OrderByDescending(o => o.Fecha)
+       .ToList();
         }
 
         public int ObtenerProximoId()
         {
-            // TODO: Calcular próximo ID disponible.
-            return 1;
+            var lista = ObtenerTodas();
+
+            if (lista.Count == 0)
+                return 1;
+
+            return lista.Max(o => o.Id) + 1;
         }
 
         private string ConvertirObservacionALinea(Observacion observacion)
         {
-            // TODO: Convertir observación a formato separado por |.
-            return string.Empty;
+            return $"{observacion.Id}|{observacion.DniPaciente}|{observacion.Fecha}|{observacion.Texto}";
         }
 
         private Observacion? ConvertirLineaAObservacion(string linea)
         {
-            // TODO: Convertir línea del archivo en observación.
-            return null;
+            var partes = linea.Split('|');
+
+            if (partes.Length < 4)
+                return null;
+
+            int id = int.Parse(partes[0]);
+            long dni = long.Parse(partes[1]);
+            DateTime fecha = DateTime.Parse(partes[2]);
+            string texto = partes[3];
+
+            return new Observacion(id, dni, fecha, texto);
         }
     }
 }
