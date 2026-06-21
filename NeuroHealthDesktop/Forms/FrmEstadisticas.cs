@@ -17,14 +17,36 @@ namespace NeuroHealthDesktop.Forms
 
         private void CargarEstadisticas()
         {
-            // TODO: Solicitar estadísticas al servicio y mostrarlas.
-            lblEnEsperaValor.Text = "0";
-            lblAdmitidosValor.Text = "0";
-            lblVerdesValor.Text = "0";
-            lblAmarillosValor.Text = "0";
-            lblRojosValor.Text = "0";
-            lblEdadPromedioValor.Text = "0.00";
-            lblPorcentajeCriticosValor.Text = "0.00 %";
+            lblEnEsperaValor.Text =
+                servicioPacientes.ContarEnEspera().ToString();
+
+            lblAdmitidosValor.Text =
+                servicioPacientes.ContarAdmitidos().ToString();
+
+            lblVerdesValor.Text =
+                servicioPacientes.ContarPorNivel(
+                    NivelUrgencia.Verde
+                ).ToString();
+
+            lblAmarillosValor.Text =
+                servicioPacientes.ContarPorNivel(
+                    NivelUrgencia.Amarillo
+                ).ToString();
+
+            lblRojosValor.Text =
+                servicioPacientes.ContarPorNivel(
+                    NivelUrgencia.Rojo
+                ).ToString();
+
+            lblEdadPromedioValor.Text =
+                servicioPacientes
+                    .CalcularEdadPromedioAdmitidos()
+                    .ToString("0.00");
+
+            lblPorcentajeCriticosValor.Text =
+                servicioPacientes
+                    .CalcularPorcentajeCriticos()
+                    .ToString("0.00") + " %";
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)

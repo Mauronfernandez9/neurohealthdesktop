@@ -45,3 +45,27 @@ C:\Users\tomic\COSAS\AESTUDIO\ESTUDIO\UPSO\2do Año - PRIMER CUATRISMESTRE\C# .N
 C:\Users\tomic\COSAS\AESTUDIO\ESTUDIO\UPSO\2do Año - PRIMER CUATRISMESTRE\C# .NET\neurohealthdesktop\NeuroHealthDesktop\obj\Debug\net8.0-windows\NeuroHealthDesktop.pdb
 C:\Users\tomic\COSAS\AESTUDIO\ESTUDIO\UPSO\2do Año - PRIMER CUATRISMESTRE\C# .NET\neurohealthdesktop\NeuroHealthDesktop\obj\Debug\net8.0-windows\NeuroHealthDesktop.genruntimeconfig.cache
 C:\Users\tomic\COSAS\AESTUDIO\ESTUDIO\UPSO\2do Año - PRIMER CUATRISMESTRE\C# .NET\neurohealthdesktop\NeuroHealthDesktop\obj\Debug\net8.0-windows\ref\NeuroHealthDesktop.dll
+C:\Users\Flor\Desktop\Nueva carpeta\neurohealthdesktop\NeuroHealthDesktop\bin\Debug\net8.0-windows\Datos\observaciones.txt
+C:\Users\Flor\Desktop\Nueva carpeta\neurohealthdesktop\NeuroHealthDesktop\bin\Debug\net8.0-windows\Datos\observaciones_prueba.txt
+C:\Users\Flor\Desktop\Nueva carpeta\neurohealthdesktop\NeuroHealthDesktop\bin\Debug\net8.0-windows\Datos\pacientes.txt
+C:\Users\Flor\Desktop\Nueva carpeta\neurohealthdesktop\NeuroHealthDesktop\bin\Debug\net8.0-windows\Datos\pacientes_prueba.txt
+C:\Users\Flor\Desktop\Nueva carpeta\neurohealthdesktop\NeuroHealthDesktop\bin\Debug\net8.0-windows\NeuroHealthDesktop.exe
+C:\Users\Flor\Desktop\Nueva carpeta\neurohealthdesktop\NeuroHealthDesktop\bin\Debug\net8.0-windows\NeuroHealthDesktop.deps.json
+C:\Users\Flor\Desktop\Nueva carpeta\neurohealthdesktop\NeuroHealthDesktop\bin\Debug\net8.0-windows\NeuroHealthDesktop.runtimeconfig.json
+C:\Users\Flor\Desktop\Nueva carpeta\neurohealthdesktop\NeuroHealthDesktop\bin\Debug\net8.0-windows\NeuroHealthDesktop.dll
+C:\Users\Flor\Desktop\Nueva carpeta\neurohealthdesktop\NeuroHealthDesktop\bin\Debug\net8.0-windows\NeuroHealthDesktop.pdb
+C:\Users\Flor\Desktop\Nueva carpeta\neurohealthdesktop\NeuroHealthDesktop\obj\Debug\net8.0-windows\NeuroHealthDesktop.Forms.FrmEstadisticas.resources
+C:\Users\Flor\Desktop\Nueva carpeta\neurohealthdesktop\NeuroHealthDesktop\obj\Debug\net8.0-windows\NeuroHealthDesktop.Forms.FrmObservaciones.resources
+C:\Users\Flor\Desktop\Nueva carpeta\neurohealthdesktop\NeuroHealthDesktop\obj\Debug\net8.0-windows\NeuroHealthDesktop.Forms.FrmPrincipal.resources
+C:\Users\Flor\Desktop\Nueva carpeta\neurohealthdesktop\NeuroHealthDesktop\obj\Debug\net8.0-windows\NeuroHealthDesktop.Forms.FrmRegistrarPaciente.resources
+C:\Users\Flor\Desktop\Nueva carpeta\neurohealthdesktop\NeuroHealthDesktop\obj\Debug\net8.0-windows\NeuroHealthDesktop.csproj.GenerateResource.cache
+C:\Users\Flor\Desktop\Nueva carpeta\neurohealthdesktop\NeuroHealthDesktop\obj\Debug\net8.0-windows\NeuroHealthDesktop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Flor\Desktop\Nueva carpeta\neurohealthdesktop\NeuroHealthDesktop\obj\Debug\net8.0-windows\NeuroHealthDesktop.AssemblyInfoInputs.cache
+C:\Users\Flor\Desktop\Nueva carpeta\neurohealthdesktop\NeuroHealthDesktop\obj\Debug\net8.0-windows\NeuroHealthDesktop.AssemblyInfo.cs
+C:\Users\Flor\Desktop\Nueva carpeta\neurohealthdesktop\NeuroHealthDesktop\obj\Debug\net8.0-windows\NeuroHealthDesktop.csproj.CoreCompileInputs.cache
+C:\Users\Flor\Desktop\Nueva carpeta\neurohealthdesktop\NeuroHealthDesktop\obj\Debug\net8.0-windows\NeuroHealthDesktop.sourcelink.json
+C:\Users\Flor\Desktop\Nueva carpeta\neurohealthdesktop\NeuroHealthDesktop\obj\Debug\net8.0-windows\NeuroHealthDesktop.dll
+C:\Users\Flor\Desktop\Nueva carpeta\neurohealthdesktop\NeuroHealthDesktop\obj\Debug\net8.0-windows\refint\NeuroHealthDesktop.dll
+C:\Users\Flor\Desktop\Nueva carpeta\neurohealthdesktop\NeuroHealthDesktop\obj\Debug\net8.0-windows\NeuroHealthDesktop.pdb
+C:\Users\Flor\Desktop\Nueva carpeta\neurohealthdesktop\NeuroHealthDesktop\obj\Debug\net8.0-windows\NeuroHealthDesktop.genruntimeconfig.cache
+C:\Users\Flor\Desktop\Nueva carpeta\neurohealthdesktop\NeuroHealthDesktop\obj\Debug\net8.0-windows\ref\NeuroHealthDesktop.dll

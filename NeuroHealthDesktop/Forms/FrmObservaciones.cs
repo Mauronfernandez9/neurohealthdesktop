@@ -16,27 +16,82 @@ namespace NeuroHealthDesktop.Forms
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            // TODO: Agregar observación mediante el servicio.
-            MessageBox.Show("Aquí se agregará una observación.");
+            try
+            {
+                long dni = ObtenerDni();
+
+                var resultado = servicioObservaciones.AgregarObservacion(
+                    dni,
+                    txtObservacion.Text.Trim()
+                );
+
+                MessageBox.Show(resultado.Mensaje);
+
+                if (resultado.Exito)
+                {
+                    txtObservacion.Clear();
+                    CargarObservaciones(dni);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            // TODO: Buscar observaciones por DNI.
-            MessageBox.Show("Aquí se buscarán observaciones por DNI.");
+            try
+            {
+                long dni = ObtenerDni();
+
+                CargarObservaciones(dni);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void CargarObservaciones(long dni)
         {
-            // TODO: Cargar observaciones en la lista.
             lstObservaciones.Items.Clear();
-            lstObservaciones.Items.Add("Aquí se mostrarán las observaciones del paciente.");
+
+            var observaciones =
+                servicioObservaciones.ObtenerObservacionesPorPaciente(dni);
+
+            foreach (var obs in observaciones)
+            {
+                lstObservaciones.Items.Add(
+                    $"{obs.Fecha:dd/MM/yyyy HH:mm} - {obs.Texto}"
+                );
+            }
+
+            if (observaciones.Count == 0)
+            {
+                lstObservaciones.Items.Add(
+                    "No hay observaciones para este paciente."
+                );
+            }
         }
 
         private long ObtenerDni()
         {
-            // TODO: Obtener y validar DNI.
-            return 0;
+            if (!long.TryParse(txtDni.Text, out long dni))
+            {
+                throw new Exception(
+                    "Debe ingresar un DNI válido."
+                );
+            }
+
+            if (dni <= 0)
+            {
+                throw new Exception(
+                    "El DNI debe ser mayor que cero."
+                );
+            }
+
+            return dni;
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)

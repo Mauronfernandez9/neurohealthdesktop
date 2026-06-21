@@ -1,28 +1,39 @@
-﻿using System.Collections.Generic;
-using System.Net;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 
 namespace NeuroHealthDesktop.Repositorios
 {
     public class RepositorioPacientesArchivo : IRepositorioPacientes
     {
-        private string rutaArchivo;
+        private readonly string rutaArchivo;
 
         public RepositorioPacientesArchivo()
         {
-            // TODO: Crear carpeta Datos y definir ruta de pacientes.txt.
-            rutaArchivo = "pacientes.txt";
+            string carpeta = Path.Combine(
+                AppDomain.CurrentDomain.BaseDirectory,
+                "Datos"
+            );
+
+            if (!Directory.Exists(carpeta))
+            {
+                Directory.CreateDirectory(carpeta);
+            }
+
+            rutaArchivo = Path.Combine(carpeta, "pacientes.txt");
+
+            if (!File.Exists(rutaArchivo))
+            {
+                File.Create(rutaArchivo).Close();
+            }
         }
 
         public void Agregar(Paciente paciente)
         {
-            StreamWriter write = new StreamWriter(rutaArchivo, true);
-            if (paciente is PacienteGuardia pg)
+            using (StreamWriter writer = new StreamWriter(rutaArchivo, true))
             {
-                write.WriteLine($"{pg.Tipo} | {pg.Dni} | {pg.NombreApellido} | {pg.Edad} | {pg.Motivo} | {pg.Signos} | {pg.FechaIngreso} | {pg.Nivel} | {pg.RequiereCamilla} | |");
-            }
-            else if (paciente is PacientePediatrico pd)
-            {
-                write.WriteLine($"{pd.Tipo} | {pd.Dni} | {pd.NombreApellido} | {pd.Edad} | {pd.Motivo} | {pd.Signos} | {pd.FechaIngreso} | {pd.Nivel} | | {pd.AdultoResponsable}");
+                writer.WriteLine(ConvertirPacienteALinea(paciente));
             }
         }
 
@@ -33,9 +44,13 @@ namespace NeuroHealthDesktop.Repositorios
             if (!File.Exists(rutaArchivo))
                 return lista;
 
-            foreach (var linea in File.ReadAllLines(rutaArchivo))
+            foreach (string linea in File.ReadAllLines(rutaArchivo))
             {
-                var paciente = ConvertirLineaAPaciente(linea);
+                if (string.IsNullOrWhiteSpace(linea))
+                    continue;
+
+                Paciente? paciente = ConvertirLineaAPaciente(linea);
+
                 if (paciente != null)
                     lista.Add(paciente);
             }
@@ -45,7 +60,8 @@ namespace NeuroHealthDesktop.Repositorios
 
         public Paciente? BuscarPorDni(long dni)
         {
-            return ObtenerTodos().FirstOrDefault(p => p.Dni == dni);
+            return ObtenerTodos()
+                .FirstOrDefault(p => p.Dni == dni);
         }
 
         public bool ExisteDni(long dni)
@@ -55,95 +71,145 @@ namespace NeuroHealthDesktop.Repositorios
 
         public void Actualizar(Paciente paciente)
         {
-            var lista = ObtenerTodos();
+            List<Paciente> pacientes = ObtenerTodos();
 
-            for (int i = 0; i < lista.Count; i++)
+            for (int i = 0; i < pacientes.Count; i++)
             {
-                if (lista[i].Dni == paciente.Dni)
+                if (pacientes[i].Dni == paciente.Dni)
                 {
-                    lista[i] = paciente;
+                    pacientes[i] = paciente;
                     break;
                 }
             }
-            GuardarTodos(lista);
+
+            GuardarTodos(pacientes);
         }
 
         public List<Paciente> FiltrarPorNivel(NivelUrgencia nivel)
         {
-            return ObtenerTodos().Where(p => p.Nivel == nivel).ToList();
+            return ObtenerTodos()
+                .Where(p => p.Nivel == nivel)
+                .ToList();
         }
 
         private void GuardarTodos(List<Paciente> pacientes)
         {
             using (StreamWriter writer = new StreamWriter(rutaArchivo, false))
             {
-                foreach (var p in pacientes)
+                foreach (Paciente paciente in pacientes)
                 {
-                    writer.WriteLine(ConvertirPacienteALinea(p));
+                    writer.WriteLine(ConvertirPacienteALinea(paciente));
                 }
             }
         }
 
         private string ConvertirPacienteALinea(Paciente paciente)
         {
-            string camilla = "";
-            string adulto = "";
+            string requiereCamilla = "";
+            string adultoResponsable = "";
 
             if (paciente is PacienteGuardia pg)
             {
-                camilla = pg.RequiereCamilla.ToString();
+                requiereCamilla = pg.RequiereCamilla.ToString();
             }
             else if (paciente is PacientePediatrico pp)
             {
-                adulto = pp.AdultoResponsable;
+                adultoResponsable = pp.AdultoResponsable;
             }
 
-            return $"{paciente.Tipo}|{paciente.Dni}|{paciente.NombreApellido}|{paciente.Edad}|{paciente.Motivo}|" +
-                   $"{paciente.Signos.Pulso}|{paciente.Signos.Temperatura}|{paciente.Signos.Presion}|" +
-                   $"{paciente.Signos.Saturacion}|{paciente.Signos.Dolor}|{paciente.FechaIngreso}|" +
-                   $"{paciente.Nivel}|{camilla}|{adulto}";
+            return
+                $"{paciente.Tipo}|" +
+                $"{paciente.Dni}|" +
+                $"{paciente.NombreApellido}|" +
+                $"{paciente.Edad}|" +
+                $"{paciente.Motivo}|" +
+                $"{paciente.Signos.Pulso}|" +
+                $"{paciente.Signos.Temperatura}|" +
+                $"{paciente.Signos.Presion}|" +
+                $"{paciente.Signos.Saturacion}|" +
+                $"{paciente.Signos.Dolor}|" +
+                $"{paciente.FechaIngreso:O}|" +
+                $"{paciente.Nivel}|" +
+                $"{requiereCamilla}|" +
+                $"{adultoResponsable}";
         }
 
         private Paciente? ConvertirLineaAPaciente(string linea)
         {
-            var partes = linea.Split('|');
-
-            TipoPaciente tipo = Enum.Parse<TipoPaciente>(partes[0]);
-            long dni = long.Parse(partes[1]);
-            string nombre = partes[2];
-            int edad = int.Parse(partes[3]);
-            MotivoConsulta motivo = Enum.Parse<MotivoConsulta>(partes[4]);
-
-            SignosVitales signos = new SignosVitales(
-                int.Parse(partes[5]),
-                double.Parse(partes[6]),
-                partes[7],
-                int.Parse(partes[8]),
-                int.Parse(partes[9])
-            );
-
-            DateTime fecha = DateTime.Parse(partes[10]);
-            NivelUrgencia nivel = Enum.Parse<NivelUrgencia>(partes[11]);
-
-            if (tipo == TipoPaciente.Guardia)
+            try
             {
-                bool camilla = bool.Parse(partes[12]);
+                string[] partes = linea.Split('|');
 
-                return new PacienteGuardia(dni, nombre, edad, motivo, signos, camilla)
+                if (partes.Length < 14)
+                    return null;
+
+                TipoPaciente tipo =
+                    Enum.Parse<TipoPaciente>(partes[0]);
+
+                long dni =
+                    long.Parse(partes[1]);
+
+                string nombre =
+                    partes[2];
+
+                int edad =
+                    int.Parse(partes[3]);
+
+                MotivoConsulta motivo =
+                    Enum.Parse<MotivoConsulta>(partes[4]);
+
+                SignosVitales signos = new SignosVitales(
+                    int.Parse(partes[5]),
+                    double.Parse(partes[6]),
+                    partes[7],
+                    int.Parse(partes[8]),
+                    int.Parse(partes[9])
+                );
+
+                DateTime fechaIngreso =
+                    DateTime.Parse(partes[10]);
+
+                NivelUrgencia nivel =
+                    Enum.Parse<NivelUrgencia>(partes[11]);
+
+                if (tipo == TipoPaciente.Guardia)
                 {
-                    FechaIngreso = fecha,
-                    Nivel = nivel
-                };
+                    bool requiereCamilla =
+                        bool.Parse(partes[12]);
+
+                    return new PacienteGuardia(
+                        dni,
+                        nombre,
+                        edad,
+                        motivo,
+                        signos,
+                        requiereCamilla)
+                    {
+                        FechaIngreso = fechaIngreso,
+                        Nivel = nivel
+                    };
+                }
+                else
+                {
+                    string adultoResponsable =
+                        partes[13];
+
+                    return new PacientePediatrico(
+                        dni,
+                        nombre,
+                        edad,
+                        motivo,
+                        signos,
+                        adultoResponsable)
+                    {
+                        FechaIngreso = fechaIngreso,
+                        Nivel = nivel
+                    };
+                }
             }
-            else
+            catch
             {
-                string adulto = partes[13];
-
-                return new PacientePediatrico(dni, nombre, edad, motivo, signos, adulto)
-                {
-                    FechaIngreso = fecha,
-                    Nivel = nivel
-                };
+                return null;
             }
         }
     }

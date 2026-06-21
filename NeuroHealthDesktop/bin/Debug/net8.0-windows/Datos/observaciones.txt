@@ -6,3 +6,6 @@
 6|33222111|2026-06-08 16:50:00|Traumatismo con dolor intenso. Se indica evaluacion por imagen.
 7|25666777|2026-06-08 17:20:00|Paciente critico. Dolor abdominal intenso y fiebre alta.
 8|25666777|2026-06-08 17:28:00|Se prioriza atencion inmediata por nivel rojo.
+9|42547191|2026-06-21T00:35:40.4605526-03:00|dolor de ojo
+10|42547191|2026-06-21T00:35:57.5194705-03:00|dolor de rodilla
+11|42547191|2026-06-21T00:36:06.5694072-03:00|dolor de pierna

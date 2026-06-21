@@ -50,48 +50,74 @@ namespace NeuroHealthDesktop.Forms
 
         private void ActualizarGrillas()
         {
-            // TODO: Actualizar la cola de espera y la lista de admitidos.
             dgvColaEspera.DataSource = null;
             dgvPacientesAdmitidos.DataSource = null;
+
+            dgvColaEspera.DataSource =
+                servicioPacientes.ObtenerColaEspera();
+
+            dgvPacientesAdmitidos.DataSource =
+                servicioPacientes.ObtenerPacientesAdmitidos();
         }
 
         private async void btnEvaluarPaciente_Click(object sender, EventArgs e)
         {
-            // Fragmento orientativo provisto para simular tarea en segundo plano.
             btnEvaluarPaciente.Enabled = false;
+
             progressBarEvaluacion.Visible = true;
             progressBarEvaluacion.Style = ProgressBarStyle.Marquee;
-            lblEstado.Text = "Aquí se evaluará el siguiente paciente.";
+
+            lblEstado.Text = "Evaluando paciente...";
 
             await Task.Run(() =>
             {
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
             });
+
+            var resultado =
+                servicioPacientes.EvaluarSiguientePaciente();
 
             progressBarEvaluacion.Visible = false;
             btnEvaluarPaciente.Enabled = true;
-            lblEstado.Text = "Evaluación pendiente de implementar.";
+
+            lblEstado.Text = resultado.Mensaje;
+
+            ActualizarGrillas();
+
+            if (!resultado.Exito)
+            {
+                MessageBox.Show(
+                    resultado.Mensaje,
+                    "Información",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                );
+            }
         }
 
         private void btnNuevoPaciente_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Aquí se abrirá el formulario para registrar un paciente.");
+            FrmRegistrarPaciente frmRegistrarPaciente = new FrmRegistrarPaciente(servicioPacientes);
+            frmRegistrarPaciente.ShowDialog();
+            this.ActualizarGrillas();
         }
 
         private void btnObservaciones_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Aquí se abrirá el formulario de observaciones.");
+            FrmObservaciones frmObservacion = new FrmObservaciones(servicioObservaciones);
+            frmObservacion.ShowDialog();
         }
 
         private void btnEstadisticas_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Aquí se abrirá el formulario de estadísticas.");
+            FrmEstadisticas frmEstadisticas = new FrmEstadisticas(servicioPacientes);
+            frmEstadisticas.ShowDialog();
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
             ActualizarGrillas();
-            lblEstado.Text = "Aquí se actualizarán los datos mostrados.";
+            lblEstado.Text = "Datos actualizados.";
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -99,9 +125,36 @@ namespace NeuroHealthDesktop.Forms
             Close();
         }
 
-        private void dgvPacientesAdmitidos_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        private void dgvPacientesAdmitidos_CellFormatting(
+     object sender,
+     DataGridViewCellFormattingEventArgs e)
         {
-            // TODO: Aplicar color según el nivel de urgencia.
+            if (dgvPacientesAdmitidos.Rows[e.RowIndex].DataBoundItem
+                is Paciente paciente)
+            {
+                switch (paciente.Nivel)
+                {
+                    case NivelUrgencia.Rojo:
+                        dgvPacientesAdmitidos.Rows[e.RowIndex]
+                            .DefaultCellStyle.BackColor = Color.LightCoral;
+                        break;
+
+                    case NivelUrgencia.Amarillo:
+                        dgvPacientesAdmitidos.Rows[e.RowIndex]
+                            .DefaultCellStyle.BackColor = Color.Khaki;
+                        break;
+
+                    case NivelUrgencia.Verde:
+                        dgvPacientesAdmitidos.Rows[e.RowIndex]
+                            .DefaultCellStyle.BackColor = Color.LightGreen;
+                        break;
+                }
+            }
+        }
+
+        private void dgvColaEspera_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

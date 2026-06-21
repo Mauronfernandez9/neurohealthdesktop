@@ -31,25 +31,106 @@ namespace NeuroHealthDesktop.Forms
 
         private void cmbTipoPaciente_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // TODO: Habilitar controles según tipo de paciente.
+            TipoPaciente tipo =
+                (TipoPaciente)cmbTipoPaciente.SelectedItem;
+
+            bool esGuardia = tipo == TipoPaciente.Guardia;
+
+            chkRequiereCamilla.Enabled = esGuardia;
+            txtAdultoResponsable.Enabled = !esGuardia;
+
+            if (esGuardia)
+                txtAdultoResponsable.Clear();
+            else
+                chkRequiereCamilla.Checked = false;
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            // TODO: Crear paciente y llamar al servicio.
-            MessageBox.Show("Aquí se registrará el paciente.");
+            try
+            {
+                Paciente paciente =
+                    CrearPacienteDesdeFormulario();
+
+                var resultado =
+                    servicioPacientes.RegistrarPaciente(paciente);
+
+                MessageBox.Show(resultado.Mensaje);
+
+                if (resultado.Exito)
+                {
+                    DialogResult = DialogResult.OK;
+                    Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private Paciente CrearPacienteDesdeFormulario()
         {
-            // TODO: Leer datos y crear PacienteGuardia o PacientePediatrico.
-            throw new NotImplementedException("Completar creación del paciente desde el formulario.");
+            long dni = ObtenerDni();
+
+            string nombre = txtNombreApellido.Text.Trim();
+
+            int edad = (int)nudEdad.Value;
+
+            MotivoConsulta motivo =
+                (MotivoConsulta)cmbMotivo.SelectedItem;
+
+            SignosVitales signos =
+                new SignosVitales(
+                    (int)nudPulso.Value,
+                    (double)nudTemperatura.Value,
+                    txtPresion.Text.Trim(),
+                    (int)nudSaturacion.Value,
+                    (int)nudDolor.Value
+                );
+
+            TipoPaciente tipo =
+                (TipoPaciente)cmbTipoPaciente.SelectedItem;
+
+            if (tipo == TipoPaciente.Guardia)
+            {
+                return new PacienteGuardia(
+                    dni,
+                    nombre,
+                    edad,
+                    motivo,
+                    signos,
+                    chkRequiereCamilla.Checked
+                );
+            }
+
+            return new PacientePediatrico(
+                dni,
+                nombre,
+                edad,
+                motivo,
+                signos,
+                txtAdultoResponsable.Text.Trim()
+            );
         }
 
         private long ObtenerDni()
         {
-            // TODO: Obtener y validar DNI.
-            return 0;
+            if (!long.TryParse(txtDni.Text, out long dni))
+            {
+                throw new Exception(
+                    "El DNI debe ser numérico."
+                );
+            }
+
+            if (dni <= 0)
+            {
+                throw new Exception(
+                    "El DNI debe ser positivo."
+                );
+            }
+
+            return dni;
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
