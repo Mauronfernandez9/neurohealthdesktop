@@ -1,45 +1,53 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Flor\\Desktop\\Nueva carpeta\\neurohealthdesktop\\",
+  "WorkspaceRootPath": "C:\\Users\\tomic\\COSAS\\AESTUDIO\\ESTUDIO\\UPSO\\2do A\u00F1o - PRIMER CUATRISMESTRE\\C# .NET\\neurohealthdesktop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|c:\\users\\flor\\desktop\\nueva carpeta\\neurohealthdesktop\\neurohealthdesktop\\forms\\frmobservaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|solutionrelative:neurohealthdesktop\\forms\\frmobservaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|c:\\users\\flor\\desktop\\nueva carpeta\\neurohealthdesktop\\neurohealthdesktop\\forms\\frmobservaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|solutionrelative:neurohealthdesktop\\forms\\frmobservaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|c:\\users\\flor\\desktop\\nueva carpeta\\neurohealthdesktop\\neurohealthdesktop\\forms\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|solutionrelative:neurohealthdesktop\\forms\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|c:\\users\\flor\\desktop\\nueva carpeta\\neurohealthdesktop\\neurohealthdesktop\\forms\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|solutionrelative:neurohealthdesktop\\forms\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|c:\\users\\flor\\desktop\\nueva carpeta\\neurohealthdesktop\\neurohealthdesktop\\forms\\frmregistrarpaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|solutionrelative:neurohealthdesktop\\forms\\frmregistrarpaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|c:\\users\\flor\\desktop\\nueva carpeta\\neurohealthdesktop\\neurohealthdesktop\\forms\\frmregistrarpaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|c:\\users\\tomic\\cosas\\aestudio\\estudio\\upso\\2do a\u00F1o - primer cuatrismestre\\c# .net\\neurohealthdesktop\\neurohealthdesktop\\forms\\frmregistrarpaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|solutionrelative:neurohealthdesktop\\forms\\frmregistrarpaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|c:\\users\\flor\\desktop\\nueva carpeta\\neurohealthdesktop\\neurohealthdesktop\\servicios\\serviciotriaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|c:\\users\\tomic\\cosas\\aestudio\\estudio\\upso\\2do a\u00F1o - primer cuatrismestre\\c# .net\\neurohealthdesktop\\neurohealthdesktop\\forms\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|solutionrelative:neurohealthdesktop\\forms\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|C:\\Users\\tomic\\COSAS\\AESTUDIO\\ESTUDIO\\UPSO\\2do A\u00F1o - PRIMER CUATRISMESTRE\\C# .NET\\neurohealthdesktop\\neurohealthdesktop\\forms\\frmregistrarpaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|solutionrelative:neurohealthdesktop\\forms\\frmregistrarpaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|C:\\Users\\tomic\\COSAS\\AESTUDIO\\ESTUDIO\\UPSO\\2do A\u00F1o - PRIMER CUATRISMESTRE\\C# .NET\\neurohealthdesktop\\neurohealthdesktop\\forms\\frmobservaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|solutionrelative:neurohealthdesktop\\forms\\frmobservaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|c:\\users\\tomic\\cosas\\aestudio\\estudio\\upso\\2do a\u00F1o - primer cuatrismestre\\c# .net\\neurohealthdesktop\\neurohealthdesktop\\forms\\frmobservaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|solutionrelative:neurohealthdesktop\\forms\\frmobservaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|C:\\Users\\tomic\\COSAS\\AESTUDIO\\ESTUDIO\\UPSO\\2do A\u00F1o - PRIMER CUATRISMESTRE\\C# .NET\\neurohealthdesktop\\neurohealthdesktop\\forms\\frmestadisticas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|solutionrelative:neurohealthdesktop\\forms\\frmestadisticas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|c:\\users\\tomic\\cosas\\aestudio\\estudio\\upso\\2do a\u00F1o - primer cuatrismestre\\c# .net\\neurohealthdesktop\\neurohealthdesktop\\forms\\frmestadisticas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|solutionrelative:neurohealthdesktop\\forms\\frmestadisticas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|C:\\Users\\tomic\\COSAS\\AESTUDIO\\ESTUDIO\\UPSO\\2do A\u00F1o - PRIMER CUATRISMESTRE\\C# .NET\\neurohealthdesktop\\neurohealthdesktop\\forms\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|solutionrelative:neurohealthdesktop\\forms\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|c:\\users\\tomic\\cosas\\aestudio\\estudio\\upso\\2do a\u00F1o - primer cuatrismestre\\c# .net\\neurohealthdesktop\\neurohealthdesktop\\servicios\\serviciotriaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|solutionrelative:neurohealthdesktop\\servicios\\serviciotriaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|c:\\users\\flor\\desktop\\nueva carpeta\\neurohealthdesktop\\neurohealthdesktop\\servicios\\serviciopacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|c:\\users\\tomic\\cosas\\aestudio\\estudio\\upso\\2do a\u00F1o - primer cuatrismestre\\c# .net\\neurohealthdesktop\\neurohealthdesktop\\servicios\\serviciopacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|solutionrelative:neurohealthdesktop\\servicios\\serviciopacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|c:\\users\\flor\\desktop\\nueva carpeta\\neurohealthdesktop\\neurohealthdesktop\\repositorios\\repositorioobservacionesarchivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|c:\\users\\tomic\\cosas\\aestudio\\estudio\\upso\\2do a\u00F1o - primer cuatrismestre\\c# .net\\neurohealthdesktop\\neurohealthdesktop\\repositorios\\repositorioobservacionesarchivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|solutionrelative:neurohealthdesktop\\repositorios\\repositorioobservacionesarchivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|c:\\users\\flor\\desktop\\nueva carpeta\\neurohealthdesktop\\neurohealthdesktop\\repositorios\\repositoriopacientesarchivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|c:\\users\\tomic\\cosas\\aestudio\\estudio\\upso\\2do a\u00F1o - primer cuatrismestre\\c# .net\\neurohealthdesktop\\neurohealthdesktop\\repositorios\\repositoriopacientesarchivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D15B089-5CA1-C212-D4AF-5DAD10CEB7CB}|NeuroHealthDesktop\\NeuroHealthDesktop.csproj|solutionrelative:neurohealthdesktop\\repositorios\\repositoriopacientesarchivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -50,15 +58,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
+              "Title": "FrmEstadisticas.cs",
+              "DocumentMoniker": "C:\\Users\\tomic\\COSAS\\AESTUDIO\\ESTUDIO\\UPSO\\2do A\u00F1o - PRIMER CUATRISMESTRE\\C# .NET\\neurohealthdesktop\\NeuroHealthDesktop\\Forms\\FrmEstadisticas.cs",
+              "RelativeDocumentMoniker": "NeuroHealthDesktop\\Forms\\FrmEstadisticas.cs",
+              "ToolTip": "C:\\Users\\tomic\\COSAS\\AESTUDIO\\ESTUDIO\\UPSO\\2do A\u00F1o - PRIMER CUATRISMESTRE\\C# .NET\\neurohealthdesktop\\NeuroHealthDesktop\\Forms\\FrmEstadisticas.cs",
+              "RelativeToolTip": "NeuroHealthDesktop\\Forms\\FrmEstadisticas.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAwCYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-21T03:36:55.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FrmEstadisticas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\tomic\\COSAS\\AESTUDIO\\ESTUDIO\\UPSO\\2do A\u00F1o - PRIMER CUATRISMESTRE\\C# .NET\\neurohealthdesktop\\NeuroHealthDesktop\\Forms\\FrmEstadisticas.cs",
+              "RelativeDocumentMoniker": "NeuroHealthDesktop\\Forms\\FrmEstadisticas.cs",
+              "ToolTip": "C:\\Users\\tomic\\COSAS\\AESTUDIO\\ESTUDIO\\UPSO\\2do A\u00F1o - PRIMER CUATRISMESTRE\\C# .NET\\neurohealthdesktop\\NeuroHealthDesktop\\Forms\\FrmEstadisticas.cs [Dise\u00F1o]",
+              "RelativeToolTip": "NeuroHealthDesktop\\Forms\\FrmEstadisticas.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-21T03:36:28.03Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "FrmObservaciones.cs",
-              "DocumentMoniker": "C:\\Users\\Flor\\Desktop\\Nueva carpeta\\neurohealthdesktop\\NeuroHealthDesktop\\Forms\\FrmObservaciones.cs",
+              "DocumentMoniker": "C:\\Users\\tomic\\COSAS\\AESTUDIO\\ESTUDIO\\UPSO\\2do A\u00F1o - PRIMER CUATRISMESTRE\\C# .NET\\neurohealthdesktop\\NeuroHealthDesktop\\Forms\\FrmObservaciones.cs",
               "RelativeDocumentMoniker": "NeuroHealthDesktop\\Forms\\FrmObservaciones.cs",
-              "ToolTip": "C:\\Users\\Flor\\Desktop\\Nueva carpeta\\neurohealthdesktop\\NeuroHealthDesktop\\Forms\\FrmObservaciones.cs",
+              "ToolTip": "C:\\Users\\tomic\\COSAS\\AESTUDIO\\ESTUDIO\\UPSO\\2do A\u00F1o - PRIMER CUATRISMESTRE\\C# .NET\\neurohealthdesktop\\NeuroHealthDesktop\\Forms\\FrmObservaciones.cs",
               "RelativeToolTip": "NeuroHealthDesktop\\Forms\\FrmObservaciones.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAABkAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -67,11 +116,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "FrmObservaciones.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Flor\\Desktop\\Nueva carpeta\\neurohealthdesktop\\NeuroHealthDesktop\\Forms\\FrmObservaciones.cs",
+              "DocumentMoniker": "C:\\Users\\tomic\\COSAS\\AESTUDIO\\ESTUDIO\\UPSO\\2do A\u00F1o - PRIMER CUATRISMESTRE\\C# .NET\\neurohealthdesktop\\NeuroHealthDesktop\\Forms\\FrmObservaciones.cs",
               "RelativeDocumentMoniker": "NeuroHealthDesktop\\Forms\\FrmObservaciones.cs",
-              "ToolTip": "C:\\Users\\Flor\\Desktop\\Nueva carpeta\\neurohealthdesktop\\NeuroHealthDesktop\\Forms\\FrmObservaciones.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\tomic\\COSAS\\AESTUDIO\\ESTUDIO\\UPSO\\2do A\u00F1o - PRIMER CUATRISMESTRE\\C# .NET\\neurohealthdesktop\\NeuroHealthDesktop\\Forms\\FrmObservaciones.cs [Dise\u00F1o]",
               "RelativeToolTip": "NeuroHealthDesktop\\Forms\\FrmObservaciones.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-21T03:25:17.378Z",
@@ -79,24 +128,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "FrmRegistrarPaciente.cs",
-              "DocumentMoniker": "C:\\Users\\Flor\\Desktop\\Nueva carpeta\\neurohealthdesktop\\NeuroHealthDesktop\\Forms\\FrmRegistrarPaciente.cs",
+              "DocumentMoniker": "C:\\Users\\tomic\\COSAS\\AESTUDIO\\ESTUDIO\\UPSO\\2do A\u00F1o - PRIMER CUATRISMESTRE\\C# .NET\\neurohealthdesktop\\NeuroHealthDesktop\\Forms\\FrmRegistrarPaciente.cs",
               "RelativeDocumentMoniker": "NeuroHealthDesktop\\Forms\\FrmRegistrarPaciente.cs",
-              "ToolTip": "C:\\Users\\Flor\\Desktop\\Nueva carpeta\\neurohealthdesktop\\NeuroHealthDesktop\\Forms\\FrmRegistrarPaciente.cs",
+              "ToolTip": "C:\\Users\\tomic\\COSAS\\AESTUDIO\\ESTUDIO\\UPSO\\2do A\u00F1o - PRIMER CUATRISMESTRE\\C# .NET\\neurohealthdesktop\\NeuroHealthDesktop\\Forms\\FrmRegistrarPaciente.cs",
               "RelativeToolTip": "NeuroHealthDesktop\\Forms\\FrmRegistrarPaciente.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAmwHEAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-21T03:12:01.7Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "FrmRegistrarPaciente.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Flor\\Desktop\\Nueva carpeta\\neurohealthdesktop\\NeuroHealthDesktop\\Forms\\FrmRegistrarPaciente.cs",
+              "DocumentMoniker": "C:\\Users\\tomic\\COSAS\\AESTUDIO\\ESTUDIO\\UPSO\\2do A\u00F1o - PRIMER CUATRISMESTRE\\C# .NET\\neurohealthdesktop\\NeuroHealthDesktop\\Forms\\FrmRegistrarPaciente.cs",
               "RelativeDocumentMoniker": "NeuroHealthDesktop\\Forms\\FrmRegistrarPaciente.cs",
-              "ToolTip": "C:\\Users\\Flor\\Desktop\\Nueva carpeta\\neurohealthdesktop\\NeuroHealthDesktop\\Forms\\FrmRegistrarPaciente.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\tomic\\COSAS\\AESTUDIO\\ESTUDIO\\UPSO\\2do A\u00F1o - PRIMER CUATRISMESTRE\\C# .NET\\neurohealthdesktop\\NeuroHealthDesktop\\Forms\\FrmRegistrarPaciente.cs [Dise\u00F1o]",
               "RelativeToolTip": "NeuroHealthDesktop\\Forms\\FrmRegistrarPaciente.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-21T03:11:48.385Z",
@@ -104,24 +153,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "FrmPrincipal.cs",
-              "DocumentMoniker": "C:\\Users\\Flor\\Desktop\\Nueva carpeta\\neurohealthdesktop\\NeuroHealthDesktop\\Forms\\FrmPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\tomic\\COSAS\\AESTUDIO\\ESTUDIO\\UPSO\\2do A\u00F1o - PRIMER CUATRISMESTRE\\C# .NET\\neurohealthdesktop\\NeuroHealthDesktop\\Forms\\FrmPrincipal.cs",
               "RelativeDocumentMoniker": "NeuroHealthDesktop\\Forms\\FrmPrincipal.cs",
-              "ToolTip": "C:\\Users\\Flor\\Desktop\\Nueva carpeta\\neurohealthdesktop\\NeuroHealthDesktop\\Forms\\FrmPrincipal.cs",
+              "ToolTip": "C:\\Users\\tomic\\COSAS\\AESTUDIO\\ESTUDIO\\UPSO\\2do A\u00F1o - PRIMER CUATRISMESTRE\\C# .NET\\neurohealthdesktop\\NeuroHealthDesktop\\Forms\\FrmPrincipal.cs",
               "RelativeToolTip": "NeuroHealthDesktop\\Forms\\FrmPrincipal.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAYwGwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-21T03:07:18.889Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "FrmPrincipal.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Flor\\Desktop\\Nueva carpeta\\neurohealthdesktop\\NeuroHealthDesktop\\Forms\\FrmPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\tomic\\COSAS\\AESTUDIO\\ESTUDIO\\UPSO\\2do A\u00F1o - PRIMER CUATRISMESTRE\\C# .NET\\neurohealthdesktop\\NeuroHealthDesktop\\Forms\\FrmPrincipal.cs",
               "RelativeDocumentMoniker": "NeuroHealthDesktop\\Forms\\FrmPrincipal.cs",
-              "ToolTip": "C:\\Users\\Flor\\Desktop\\Nueva carpeta\\neurohealthdesktop\\NeuroHealthDesktop\\Forms\\FrmPrincipal.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\tomic\\COSAS\\AESTUDIO\\ESTUDIO\\UPSO\\2do A\u00F1o - PRIMER CUATRISMESTRE\\C# .NET\\neurohealthdesktop\\NeuroHealthDesktop\\Forms\\FrmPrincipal.cs [Dise\u00F1o]",
               "RelativeToolTip": "NeuroHealthDesktop\\Forms\\FrmPrincipal.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-21T03:04:19.531Z",
@@ -129,11 +178,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "ServicioTriaje.cs",
-              "DocumentMoniker": "C:\\Users\\Flor\\Desktop\\Nueva carpeta\\neurohealthdesktop\\NeuroHealthDesktop\\Servicios\\ServicioTriaje.cs",
+              "DocumentMoniker": "C:\\Users\\tomic\\COSAS\\AESTUDIO\\ESTUDIO\\UPSO\\2do A\u00F1o - PRIMER CUATRISMESTRE\\C# .NET\\neurohealthdesktop\\NeuroHealthDesktop\\Servicios\\ServicioTriaje.cs",
               "RelativeDocumentMoniker": "NeuroHealthDesktop\\Servicios\\ServicioTriaje.cs",
-              "ToolTip": "C:\\Users\\Flor\\Desktop\\Nueva carpeta\\neurohealthdesktop\\NeuroHealthDesktop\\Servicios\\ServicioTriaje.cs",
+              "ToolTip": "C:\\Users\\tomic\\COSAS\\AESTUDIO\\ESTUDIO\\UPSO\\2do A\u00F1o - PRIMER CUATRISMESTRE\\C# .NET\\neurohealthdesktop\\NeuroHealthDesktop\\Servicios\\ServicioTriaje.cs",
               "RelativeToolTip": "NeuroHealthDesktop\\Servicios\\ServicioTriaje.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -142,42 +191,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "ServicioPacientes.cs",
-              "DocumentMoniker": "C:\\Users\\Flor\\Desktop\\Nueva carpeta\\neurohealthdesktop\\NeuroHealthDesktop\\Servicios\\ServicioPacientes.cs",
+              "DocumentMoniker": "C:\\Users\\tomic\\COSAS\\AESTUDIO\\ESTUDIO\\UPSO\\2do A\u00F1o - PRIMER CUATRISMESTRE\\C# .NET\\neurohealthdesktop\\NeuroHealthDesktop\\Servicios\\ServicioPacientes.cs",
               "RelativeDocumentMoniker": "NeuroHealthDesktop\\Servicios\\ServicioPacientes.cs",
-              "ToolTip": "C:\\Users\\Flor\\Desktop\\Nueva carpeta\\neurohealthdesktop\\NeuroHealthDesktop\\Servicios\\ServicioPacientes.cs",
+              "ToolTip": "C:\\Users\\tomic\\COSAS\\AESTUDIO\\ESTUDIO\\UPSO\\2do A\u00F1o - PRIMER CUATRISMESTRE\\C# .NET\\neurohealthdesktop\\NeuroHealthDesktop\\Servicios\\ServicioPacientes.cs",
               "RelativeToolTip": "NeuroHealthDesktop\\Servicios\\ServicioPacientes.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAJEAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-21T02:52:30.838Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-21T02:52:30.838Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "RepositorioObservacionesArchivo.cs",
-              "DocumentMoniker": "C:\\Users\\Flor\\Desktop\\Nueva carpeta\\neurohealthdesktop\\NeuroHealthDesktop\\Repositorios\\RepositorioObservacionesArchivo.cs",
+              "DocumentMoniker": "C:\\Users\\tomic\\COSAS\\AESTUDIO\\ESTUDIO\\UPSO\\2do A\u00F1o - PRIMER CUATRISMESTRE\\C# .NET\\neurohealthdesktop\\NeuroHealthDesktop\\Repositorios\\RepositorioObservacionesArchivo.cs",
               "RelativeDocumentMoniker": "NeuroHealthDesktop\\Repositorios\\RepositorioObservacionesArchivo.cs",
-              "ToolTip": "C:\\Users\\Flor\\Desktop\\Nueva carpeta\\neurohealthdesktop\\NeuroHealthDesktop\\Repositorios\\RepositorioObservacionesArchivo.cs",
+              "ToolTip": "C:\\Users\\tomic\\COSAS\\AESTUDIO\\ESTUDIO\\UPSO\\2do A\u00F1o - PRIMER CUATRISMESTRE\\C# .NET\\neurohealthdesktop\\NeuroHealthDesktop\\Repositorios\\RepositorioObservacionesArchivo.cs",
               "RelativeToolTip": "NeuroHealthDesktop\\Repositorios\\RepositorioObservacionesArchivo.cs",
               "ViewState": "AgIAAEYAAAAAAAAAAAAkwIAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-18T23:05:58.905Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-18T23:05:58.905Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "RepositorioPacientesArchivo.cs",
-              "DocumentMoniker": "C:\\Users\\Flor\\Desktop\\Nueva carpeta\\neurohealthdesktop\\NeuroHealthDesktop\\Repositorios\\RepositorioPacientesArchivo.cs",
+              "DocumentMoniker": "C:\\Users\\tomic\\COSAS\\AESTUDIO\\ESTUDIO\\UPSO\\2do A\u00F1o - PRIMER CUATRISMESTRE\\C# .NET\\neurohealthdesktop\\NeuroHealthDesktop\\Repositorios\\RepositorioPacientesArchivo.cs",
               "RelativeDocumentMoniker": "NeuroHealthDesktop\\Repositorios\\RepositorioPacientesArchivo.cs",
-              "ToolTip": "C:\\Users\\Flor\\Desktop\\Nueva carpeta\\neurohealthdesktop\\NeuroHealthDesktop\\Repositorios\\RepositorioPacientesArchivo.cs",
+              "ToolTip": "C:\\Users\\tomic\\COSAS\\AESTUDIO\\ESTUDIO\\UPSO\\2do A\u00F1o - PRIMER CUATRISMESTRE\\C# .NET\\neurohealthdesktop\\NeuroHealthDesktop\\Repositorios\\RepositorioPacientesArchivo.cs",
               "RelativeToolTip": "NeuroHealthDesktop\\Repositorios\\RepositorioPacientesArchivo.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAwNcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-18T21:55:40.965Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-18T21:55:40.965Z"
             }
           ]
         }

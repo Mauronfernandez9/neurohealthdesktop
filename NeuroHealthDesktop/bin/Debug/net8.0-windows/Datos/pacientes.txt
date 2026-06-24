@@ -9,3 +9,4 @@ Pediatrico|46222333|Sofia Torres|12|DolorAbdominal|88|372|105/65|96|4|2026-06-08
 Guardia|42547191|Fernandez Mauro|26|Traumatismo|5|13|70|1|4|2026-06-21T00:20:21.6797421-03:00|Rojo|True|
 Pediatrico|425487979|Pepe PiPo|23|DolorToracico|25|18|50|10|7|2026-06-21T00:21:58.2114451-03:00|Rojo||Pipo R
 Guardia|4255555|robert|27|DificultadRespiratoria|28|18|55|74|10|2026-06-21T00:39:03.5120836-03:00|Rojo|False|
+Guardia|44123123|312312341234|0|DolorToracico|0|0||0|0|2026-06-22T22:11:01.7893263-03:00|Rojo|False|

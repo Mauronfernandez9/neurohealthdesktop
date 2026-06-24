@@ -1,6 +1,7 @@
 ﻿using NeuroHealthDesktop.Servicios;
 using System;
 using System.Windows.Forms;
+using System.Linq;
 
 namespace NeuroHealthDesktop.Forms
 {
@@ -74,6 +75,10 @@ namespace NeuroHealthDesktop.Forms
             long dni = ObtenerDni();
 
             string nombre = txtNombreApellido.Text.Trim();
+            if (!EsNombreValido(nombre))
+            {
+                throw new Exception("El nombre solo puede contener letras.");
+            }
 
             int edad = (int)nudEdad.Value;
 
@@ -141,6 +146,11 @@ namespace NeuroHealthDesktop.Forms
         private void txtDni_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private bool EsNombreValido(string nombre)
+        {
+            return nombre.All(c => char.IsLetter(c) || char.IsWhiteSpace(c));
         }
     }
 }
