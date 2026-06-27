@@ -20,32 +20,19 @@ namespace NeuroHealthDesktop.Forms
             InitializeComponent();
 
             InicializarDependencias();
-            ConfigurarGrillas();
             ActualizarGrillas();
 
-            lblEstado.Text = "Sistema iniciado. Funcionalidad pendiente de implementar.";
             progressBarEvaluacion.Visible = false;
         }
 
         private void InicializarDependencias()
         {
-            // TODO: Crear repositorios, servicios y conectar dependencias.
             repositorioPacientes = new RepositorioPacientesArchivo();
             repositorioObservaciones = new RepositorioObservacionesArchivo();
             servicioTriaje = new ServicioTriaje();
 
             servicioPacientes = new ServicioPacientes(repositorioPacientes, servicioTriaje);
             servicioObservaciones = new ServicioObservaciones(repositorioObservaciones, repositorioPacientes);
-        }
-
-        private void ConfigurarGrillas()
-        {
-            // TODO: Configurar columnas de las grillas.
-        }
-
-        private void ConfigurarGrillaPacientes(DataGridView grilla, bool mostrarNivelTexto)
-        {
-            // TODO: Configurar una grilla de pacientes.
         }
 
         private void ActualizarGrillas()
@@ -58,6 +45,8 @@ namespace NeuroHealthDesktop.Forms
 
             dgvPacientesAdmitidos.DataSource =
                 servicioPacientes.ObtenerPacientesAdmitidos();
+
+            dgvPacientesAdmitidos.Columns["Signos"].Visible = false;
         }
 
         private async void btnEvaluarPaciente_Click(object sender, EventArgs e)
@@ -66,8 +55,6 @@ namespace NeuroHealthDesktop.Forms
 
             progressBarEvaluacion.Visible = true;
             progressBarEvaluacion.Style = ProgressBarStyle.Marquee;
-
-            lblEstado.Text = "Evaluando paciente...";
 
             await Task.Run(() =>
             {
@@ -79,8 +66,6 @@ namespace NeuroHealthDesktop.Forms
 
             progressBarEvaluacion.Visible = false;
             btnEvaluarPaciente.Enabled = true;
-
-            lblEstado.Text = resultado.Mensaje;
 
             ActualizarGrillas();
 
@@ -117,7 +102,6 @@ namespace NeuroHealthDesktop.Forms
         private void btnActualizar_Click(object sender, EventArgs e)
         {
             ActualizarGrillas();
-            lblEstado.Text = "Datos actualizados.";
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -153,6 +137,11 @@ namespace NeuroHealthDesktop.Forms
         }
 
         private void dgvColaEspera_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgvPacientesAdmitidos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

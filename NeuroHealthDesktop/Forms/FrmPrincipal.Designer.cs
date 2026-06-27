@@ -7,8 +7,6 @@
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Label lblColaEspera;
         private System.Windows.Forms.Label lblPacientesAdmitidos;
-        private System.Windows.Forms.Label lblEstado;
-        private System.Windows.Forms.Label lblAyudaPrincipal;
 
         private System.Windows.Forms.DataGridView dgvColaEspera;
         private System.Windows.Forms.DataGridView dgvPacientesAdmitidos;
@@ -36,8 +34,6 @@
             lblTitulo = new Label();
             lblColaEspera = new Label();
             lblPacientesAdmitidos = new Label();
-            lblEstado = new Label();
-            lblAyudaPrincipal = new Label();
             dgvColaEspera = new DataGridView();
             dgvPacientesAdmitidos = new DataGridView();
             btnNuevoPaciente = new Button();
@@ -55,9 +51,9 @@
             // 
             lblTitulo.AutoSize = true;
             lblTitulo.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            lblTitulo.Location = new Point(23, 20);
+            lblTitulo.Location = new Point(20, 17);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(490, 41);
+            lblTitulo.Size = new Size(396, 32);
             lblTitulo.TabIndex = 0;
             lblTitulo.Text = "NeuroHealth Desktop - Esqueleto";
             // 
@@ -65,9 +61,9 @@
             // 
             lblColaEspera.AutoSize = true;
             lblColaEspera.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            lblColaEspera.Location = new Point(27, 122);
+            lblColaEspera.Location = new Point(24, 104);
             lblColaEspera.Name = "lblColaEspera";
-            lblColaEspera.Size = new Size(165, 23);
+            lblColaEspera.Size = new Size(141, 19);
             lblColaEspera.TabIndex = 2;
             lblColaEspera.Text = "Pacientes en espera";
             // 
@@ -75,59 +71,40 @@
             // 
             lblPacientesAdmitidos.AutoSize = true;
             lblPacientesAdmitidos.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            lblPacientesAdmitidos.Location = new Point(697, 122);
+            lblPacientesAdmitidos.Location = new Point(610, 104);
             lblPacientesAdmitidos.Name = "lblPacientesAdmitidos";
-            lblPacientesAdmitidos.Size = new Size(170, 23);
+            lblPacientesAdmitidos.Size = new Size(143, 19);
             lblPacientesAdmitidos.TabIndex = 4;
             lblPacientesAdmitidos.Text = "Pacientes admitidos";
-            // 
-            // lblEstado
-            // 
-            lblEstado.AutoSize = true;
-            lblEstado.Location = new Point(27, 593);
-            lblEstado.Name = "lblEstado";
-            lblEstado.Size = new Size(211, 20);
-            lblEstado.TabIndex = 13;
-            lblEstado.Text = "Estado del sistema / mensajes.";
-            // 
-            // lblAyudaPrincipal
-            // 
-            lblAyudaPrincipal.AutoSize = true;
-            lblAyudaPrincipal.Location = new Point(27, 78);
-            lblAyudaPrincipal.Name = "lblAyudaPrincipal";
-            lblAyudaPrincipal.Size = new Size(695, 20);
-            lblAyudaPrincipal.TabIndex = 1;
-            lblAyudaPrincipal.Text = "Pantalla principal. Aquí deberán conectarse los servicios, cargar grillas y resolver los eventos principales.";
             // 
             // dgvColaEspera
             // 
             dgvColaEspera.ColumnHeadersHeight = 29;
-            dgvColaEspera.Location = new Point(27, 154);
-            dgvColaEspera.Margin = new Padding(3, 4, 3, 4);
+            dgvColaEspera.Location = new Point(24, 131);
             dgvColaEspera.Name = "dgvColaEspera";
             dgvColaEspera.RowHeadersWidth = 51;
             dgvColaEspera.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvColaEspera.Size = new Size(640, 280);
+            dgvColaEspera.Size = new Size(560, 238);
             dgvColaEspera.TabIndex = 3;
             dgvColaEspera.CellContentClick += dgvColaEspera_CellContentClick;
             // 
             // dgvPacientesAdmitidos
             // 
             dgvPacientesAdmitidos.ColumnHeadersHeight = 29;
-            dgvPacientesAdmitidos.Location = new Point(687, 154);
-            dgvPacientesAdmitidos.Margin = new Padding(3, 4, 3, 4);
+            dgvPacientesAdmitidos.Location = new Point(601, 131);
             dgvPacientesAdmitidos.Name = "dgvPacientesAdmitidos";
+            dgvPacientesAdmitidos.ReadOnly = true;
             dgvPacientesAdmitidos.RowHeadersWidth = 51;
             dgvPacientesAdmitidos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvPacientesAdmitidos.Size = new Size(640, 280);
+            dgvPacientesAdmitidos.Size = new Size(560, 238);
             dgvPacientesAdmitidos.TabIndex = 5;
+            dgvPacientesAdmitidos.CellContentClick += dgvPacientesAdmitidos_CellContentClick;
             // 
             // btnNuevoPaciente
             // 
-            btnNuevoPaciente.Location = new Point(27, 467);
-            btnNuevoPaciente.Margin = new Padding(3, 4, 3, 4);
+            btnNuevoPaciente.Location = new Point(24, 397);
             btnNuevoPaciente.Name = "btnNuevoPaciente";
-            btnNuevoPaciente.Size = new Size(166, 51);
+            btnNuevoPaciente.Size = new Size(145, 43);
             btnNuevoPaciente.TabIndex = 6;
             btnNuevoPaciente.Tag = "btnNuevoPaciente";
             btnNuevoPaciente.Text = "Nuevo paciente";
@@ -136,10 +113,9 @@
             // 
             // btnEvaluarPaciente
             // 
-            btnEvaluarPaciente.Location = new Point(209, 467);
-            btnEvaluarPaciente.Margin = new Padding(3, 4, 3, 4);
+            btnEvaluarPaciente.Location = new Point(183, 397);
             btnEvaluarPaciente.Name = "btnEvaluarPaciente";
-            btnEvaluarPaciente.Size = new Size(171, 51);
+            btnEvaluarPaciente.Size = new Size(150, 43);
             btnEvaluarPaciente.TabIndex = 7;
             btnEvaluarPaciente.Tag = "btnEvaluarPaciente";
             btnEvaluarPaciente.Text = "Evaluar";
@@ -148,10 +124,9 @@
             // 
             // btnObservaciones
             // 
-            btnObservaciones.Location = new Point(397, 467);
-            btnObservaciones.Margin = new Padding(3, 4, 3, 4);
+            btnObservaciones.Location = new Point(347, 397);
             btnObservaciones.Name = "btnObservaciones";
-            btnObservaciones.Size = new Size(171, 51);
+            btnObservaciones.Size = new Size(150, 43);
             btnObservaciones.TabIndex = 8;
             btnObservaciones.Tag = "btnObservaciones";
             btnObservaciones.Text = "Observaciones";
@@ -160,10 +135,9 @@
             // 
             // btnEstadisticas
             // 
-            btnEstadisticas.Location = new Point(584, 467);
-            btnEstadisticas.Margin = new Padding(3, 4, 3, 4);
+            btnEstadisticas.Location = new Point(511, 397);
             btnEstadisticas.Name = "btnEstadisticas";
-            btnEstadisticas.Size = new Size(171, 51);
+            btnEstadisticas.Size = new Size(150, 43);
             btnEstadisticas.TabIndex = 9;
             btnEstadisticas.Tag = "btnEstadisticas";
             btnEstadisticas.Text = "Estadísticas";
@@ -172,10 +146,9 @@
             // 
             // btnActualizar
             // 
-            btnActualizar.Location = new Point(771, 467);
-            btnActualizar.Margin = new Padding(3, 4, 3, 4);
+            btnActualizar.Location = new Point(675, 397);
             btnActualizar.Name = "btnActualizar";
-            btnActualizar.Size = new Size(171, 51);
+            btnActualizar.Size = new Size(150, 43);
             btnActualizar.TabIndex = 10;
             btnActualizar.Tag = "btnActualizar";
             btnActualizar.Text = "Actualizar";
@@ -184,10 +157,9 @@
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(1166, 467);
-            btnSalir.Margin = new Padding(3, 4, 3, 4);
+            btnSalir.Location = new Point(1020, 397);
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(171, 51);
+            btnSalir.Size = new Size(150, 43);
             btnSalir.TabIndex = 11;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
@@ -195,18 +167,16 @@
             // 
             // progressBarEvaluacion
             // 
-            progressBarEvaluacion.Location = new Point(27, 547);
-            progressBarEvaluacion.Margin = new Padding(3, 4, 3, 4);
+            progressBarEvaluacion.Location = new Point(24, 465);
             progressBarEvaluacion.Name = "progressBarEvaluacion";
-            progressBarEvaluacion.Size = new Size(1310, 24);
+            progressBarEvaluacion.Size = new Size(1146, 20);
             progressBarEvaluacion.TabIndex = 12;
             // 
             // FrmPrincipal
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1366, 647);
-            Controls.Add(lblEstado);
+            ClientSize = new Size(1195, 550);
             Controls.Add(progressBarEvaluacion);
             Controls.Add(btnSalir);
             Controls.Add(btnActualizar);
@@ -218,10 +188,8 @@
             Controls.Add(lblPacientesAdmitidos);
             Controls.Add(dgvColaEspera);
             Controls.Add(lblColaEspera);
-            Controls.Add(lblAyudaPrincipal);
             Controls.Add(lblTitulo);
             FormBorderStyle = FormBorderStyle.FixedSingle;
-            Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             Name = "FrmPrincipal";
             StartPosition = FormStartPosition.CenterScreen;
