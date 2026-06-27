@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NeuroHealthDesktop")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+968ef54ca574cb4c1b0764968ee5ba09a7f31eab")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ccce7ca9d9b68470ace829e6de4a7da21a1130c7")]
 [assembly: System.Reflection.AssemblyProductAttribute("NeuroHealthDesktop")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NeuroHealthDesktop")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
