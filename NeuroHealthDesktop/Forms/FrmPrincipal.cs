@@ -47,6 +47,8 @@ namespace NeuroHealthDesktop.Forms
                 servicioPacientes.ObtenerPacientesAdmitidos();
 
             dgvPacientesAdmitidos.Columns["Signos"].Visible = false;
+            dgvColaEspera.Columns["Signos"].Visible = false;
+            dgvColaEspera.Columns["Nivel"].Visible = false;
         }
 
         private async void btnEvaluarPaciente_Click(object sender, EventArgs e)

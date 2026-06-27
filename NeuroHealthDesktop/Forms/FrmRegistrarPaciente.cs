@@ -74,6 +74,8 @@ namespace NeuroHealthDesktop.Forms
         {
             long dni = ObtenerDni();
 
+            if (!dniEsValido(dni)) throw new Exception("El campo DNI no puede ser igual o menor a 0 ni estar vacio"); 
+
             string nombre = txtNombreApellido.Text.Trim();
             if (!EsNombreValido(nombre))
             {
@@ -85,6 +87,8 @@ namespace NeuroHealthDesktop.Forms
             MotivoConsulta motivo =
                 (MotivoConsulta)cmbMotivo.SelectedItem;
 
+            if (string.IsNullOrEmpty(txtPresion.Text)) throw new Exception("El campo presion no puede estar vacio");
+
             SignosVitales signos =
                 new SignosVitales(
                     (int)nudPulso.Value,
@@ -93,6 +97,9 @@ namespace NeuroHealthDesktop.Forms
                     (int)nudSaturacion.Value,
                     (int)nudDolor.Value
                 );
+
+
+
 
             TipoPaciente tipo =
                 (TipoPaciente)cmbTipoPaciente.SelectedItem;
@@ -109,6 +116,11 @@ namespace NeuroHealthDesktop.Forms
                 );
             }
 
+            if (txtAdultoResponsable.Enabled) {
+                if(!ValidarAdultoResponsable()) throw new Exception("Se necesita agregar un adulto responsable...");
+            }
+            
+
             return new PacientePediatrico(
                 dni,
                 nombre,
@@ -121,6 +133,9 @@ namespace NeuroHealthDesktop.Forms
 
         private long ObtenerDni()
         {
+
+            if (string.IsNullOrEmpty(txtDni.Text)) throw new Exception("El campo DNI no puede estar vacio");
+
             if (!long.TryParse(txtDni.Text, out long dni))
             {
                 throw new Exception(
@@ -150,7 +165,21 @@ namespace NeuroHealthDesktop.Forms
 
         private bool EsNombreValido(string nombre)
         {
+            if (string.IsNullOrWhiteSpace(nombre)) return false;
+            
             return nombre.All(c => char.IsLetter(c) || char.IsWhiteSpace(c));
+        }
+
+        private bool dniEsValido(long dni)
+        {
+            return dni > 0;
+            
+        }
+
+        private bool ValidarAdultoResponsable()
+        {
+            if (string.IsNullOrEmpty(txtAdultoResponsable.Text)) return false;
+            return true;
         }
     }
 }

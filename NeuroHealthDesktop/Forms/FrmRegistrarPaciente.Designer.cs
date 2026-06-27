@@ -16,7 +16,6 @@
         private System.Windows.Forms.Label lblDolor;
         private System.Windows.Forms.Label lblTipoPaciente;
         private System.Windows.Forms.Label lblAdultoResponsable;
-        private System.Windows.Forms.Label lblAyuda;
         private System.Windows.Forms.TextBox txtDni;
         private System.Windows.Forms.TextBox txtNombreApellido;
         private System.Windows.Forms.TextBox txtPresion;
@@ -56,7 +55,6 @@
             lblDolor = new Label();
             lblTipoPaciente = new Label();
             lblAdultoResponsable = new Label();
-            lblAyuda = new Label();
             txtDni = new TextBox();
             txtNombreApellido = new TextBox();
             txtPresion = new TextBox();
@@ -82,213 +80,224 @@
             // 
             lblTitulo.AutoSize = true;
             lblTitulo.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
-            lblTitulo.Location = new Point(22, 20);
+            lblTitulo.Location = new Point(25, 24);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(348, 30);
+            lblTitulo.Size = new Size(281, 37);
             lblTitulo.TabIndex = 0;
-            lblTitulo.Text = "Registro de paciente - Esqueleto";
+            lblTitulo.Text = "Registro de paciente";
             // 
             // lblDni
             // 
             lblDni.AutoSize = true;
-            lblDni.Location = new Point(30, 104);
+            lblDni.Location = new Point(34, 122);
             lblDni.Name = "lblDni";
-            lblDni.Size = new Size(30, 17);
+            lblDni.Size = new Size(35, 20);
             lblDni.TabIndex = 2;
             lblDni.Text = "DNI";
             // 
             // lblNombreApellido
             // 
             lblNombreApellido.AutoSize = true;
-            lblNombreApellido.Location = new Point(30, 143);
+            lblNombreApellido.Location = new Point(34, 168);
             lblNombreApellido.Name = "lblNombreApellido";
-            lblNombreApellido.Size = new Size(116, 17);
+            lblNombreApellido.Size = new Size(133, 20);
             lblNombreApellido.TabIndex = 4;
             lblNombreApellido.Text = "Apellido y nombre";
             // 
             // lblEdad
             // 
             lblEdad.AutoSize = true;
-            lblEdad.Location = new Point(30, 181);
+            lblEdad.Location = new Point(34, 213);
             lblEdad.Name = "lblEdad";
-            lblEdad.Size = new Size(38, 17);
+            lblEdad.Size = new Size(43, 20);
             lblEdad.TabIndex = 6;
             lblEdad.Text = "Edad";
             // 
             // lblMotivo
             // 
             lblMotivo.AutoSize = true;
-            lblMotivo.Location = new Point(30, 220);
+            lblMotivo.Location = new Point(34, 259);
             lblMotivo.Name = "lblMotivo";
-            lblMotivo.Size = new Size(49, 17);
+            lblMotivo.Size = new Size(56, 20);
             lblMotivo.TabIndex = 8;
             lblMotivo.Text = "Motivo";
             // 
             // lblPulso
             // 
             lblPulso.AutoSize = true;
-            lblPulso.Location = new Point(550, 104);
+            lblPulso.Location = new Point(629, 122);
             lblPulso.Name = "lblPulso";
-            lblPulso.Size = new Size(39, 17);
+            lblPulso.Size = new Size(44, 20);
             lblPulso.TabIndex = 15;
             lblPulso.Text = "Pulso";
             // 
             // lblTemperatura
             // 
             lblTemperatura.AutoSize = true;
-            lblTemperatura.Location = new Point(550, 143);
+            lblTemperatura.Location = new Point(629, 168);
             lblTemperatura.Name = "lblTemperatura";
-            lblTemperatura.Size = new Size(82, 17);
+            lblTemperatura.Size = new Size(93, 20);
             lblTemperatura.TabIndex = 17;
             lblTemperatura.Text = "Temperatura";
             // 
             // lblPresion
             // 
             lblPresion.AutoSize = true;
-            lblPresion.Location = new Point(550, 181);
+            lblPresion.Location = new Point(629, 213);
             lblPresion.Name = "lblPresion";
-            lblPresion.Size = new Size(51, 17);
+            lblPresion.Size = new Size(57, 20);
             lblPresion.TabIndex = 19;
             lblPresion.Text = "Presión";
             // 
             // lblSaturacion
             // 
             lblSaturacion.AutoSize = true;
-            lblSaturacion.Location = new Point(550, 220);
+            lblSaturacion.Location = new Point(629, 259);
             lblSaturacion.Name = "lblSaturacion";
-            lblSaturacion.Size = new Size(69, 17);
+            lblSaturacion.Size = new Size(79, 20);
             lblSaturacion.TabIndex = 21;
             lblSaturacion.Text = "Saturación";
             // 
             // lblDolor
             // 
             lblDolor.AutoSize = true;
-            lblDolor.Location = new Point(550, 258);
+            lblDolor.Location = new Point(629, 304);
             lblDolor.Name = "lblDolor";
-            lblDolor.Size = new Size(41, 17);
+            lblDolor.Size = new Size(47, 20);
             lblDolor.TabIndex = 23;
             lblDolor.Text = "Dolor";
             // 
             // lblTipoPaciente
             // 
             lblTipoPaciente.AutoSize = true;
-            lblTipoPaciente.Location = new Point(30, 258);
+            lblTipoPaciente.Location = new Point(34, 304);
             lblTipoPaciente.Name = "lblTipoPaciente";
-            lblTipoPaciente.Size = new Size(106, 17);
+            lblTipoPaciente.Size = new Size(121, 20);
             lblTipoPaciente.TabIndex = 10;
             lblTipoPaciente.Text = "Tipo de paciente";
             // 
             // lblAdultoResponsable
             // 
             lblAdultoResponsable.AutoSize = true;
-            lblAdultoResponsable.Location = new Point(30, 335);
+            lblAdultoResponsable.Location = new Point(34, 394);
             lblAdultoResponsable.Name = "lblAdultoResponsable";
-            lblAdultoResponsable.Size = new Size(122, 17);
+            lblAdultoResponsable.Size = new Size(138, 20);
             lblAdultoResponsable.TabIndex = 13;
             lblAdultoResponsable.Text = "Adulto responsable";
             // 
-            // lblAyuda
-            // 
-            lblAyuda.AutoSize = true;
-            lblAyuda.Location = new Point(25, 62);
-            lblAyuda.Name = "lblAyuda";
-            lblAyuda.Size = new Size(680, 17);
-            lblAyuda.TabIndex = 1;
-            lblAyuda.Text = "Formulario base. Aquí los alumnos deberán completar validaciones, carga de datos y creación del objeto paciente.";
-            // 
             // txtDni
             // 
-            txtDni.Location = new Point(190, 101);
+            txtDni.Location = new Point(217, 119);
+            txtDni.Margin = new Padding(3, 4, 3, 4);
             txtDni.Name = "txtDni";
-            txtDni.Size = new Size(210, 25);
+            txtDni.Size = new Size(239, 27);
             txtDni.TabIndex = 3;
             txtDni.Tag = "txtDni";
             txtDni.TextChanged += txtDni_TextChanged;
             // 
             // txtNombreApellido
             // 
-            txtNombreApellido.Location = new Point(190, 139);
+            txtNombreApellido.Location = new Point(217, 164);
+            txtNombreApellido.Margin = new Padding(3, 4, 3, 4);
             txtNombreApellido.Name = "txtNombreApellido";
-            txtNombreApellido.Size = new Size(300, 25);
+            txtNombreApellido.Size = new Size(342, 27);
             txtNombreApellido.TabIndex = 5;
             // 
             // txtPresion
             // 
-            txtPresion.Location = new Point(700, 178);
+            txtPresion.Location = new Point(800, 209);
+            txtPresion.Margin = new Padding(3, 4, 3, 4);
             txtPresion.Name = "txtPresion";
-            txtPresion.Size = new Size(160, 25);
+            txtPresion.Size = new Size(182, 27);
             txtPresion.TabIndex = 20;
             // 
             // txtAdultoResponsable
             // 
-            txtAdultoResponsable.Location = new Point(190, 332);
+            txtAdultoResponsable.Location = new Point(217, 391);
+            txtAdultoResponsable.Margin = new Padding(3, 4, 3, 4);
             txtAdultoResponsable.Name = "txtAdultoResponsable";
-            txtAdultoResponsable.Size = new Size(300, 25);
+            txtAdultoResponsable.Size = new Size(342, 27);
             txtAdultoResponsable.TabIndex = 14;
             // 
             // nudEdad
             // 
-            nudEdad.Location = new Point(190, 178);
+            nudEdad.Location = new Point(217, 209);
+            nudEdad.Margin = new Padding(3, 4, 3, 4);
             nudEdad.Maximum = new decimal(new int[] { 120, 0, 0, 0 });
+            nudEdad.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             nudEdad.Name = "nudEdad";
-            nudEdad.Size = new Size(120, 25);
+            nudEdad.Size = new Size(137, 27);
             nudEdad.TabIndex = 7;
+            nudEdad.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // nudPulso
             // 
-            nudPulso.Location = new Point(700, 101);
-            nudPulso.Maximum = new decimal(new int[] { 250, 0, 0, 0 });
+            nudPulso.Location = new Point(800, 119);
+            nudPulso.Margin = new Padding(3, 4, 3, 4);
+            nudPulso.Maximum = new decimal(new int[] { 200, 0, 0, 0 });
+            nudPulso.Minimum = new decimal(new int[] { 30, 0, 0, 0 });
             nudPulso.Name = "nudPulso";
-            nudPulso.Size = new Size(120, 25);
+            nudPulso.Size = new Size(137, 27);
             nudPulso.TabIndex = 16;
+            nudPulso.Value = new decimal(new int[] { 30, 0, 0, 0 });
             // 
             // nudTemperatura
             // 
             nudTemperatura.DecimalPlaces = 1;
-            nudTemperatura.Location = new Point(700, 139);
-            nudTemperatura.Maximum = new decimal(new int[] { 50, 0, 0, 0 });
+            nudTemperatura.Location = new Point(800, 164);
+            nudTemperatura.Margin = new Padding(3, 4, 3, 4);
+            nudTemperatura.Maximum = new decimal(new int[] { 42, 0, 0, 0 });
+            nudTemperatura.Minimum = new decimal(new int[] { 34, 0, 0, 0 });
             nudTemperatura.Name = "nudTemperatura";
-            nudTemperatura.Size = new Size(120, 25);
+            nudTemperatura.Size = new Size(137, 27);
             nudTemperatura.TabIndex = 18;
+            nudTemperatura.Value = new decimal(new int[] { 34, 0, 0, 0 });
             // 
             // nudSaturacion
             // 
-            nudSaturacion.Location = new Point(700, 216);
+            nudSaturacion.Location = new Point(800, 254);
+            nudSaturacion.Margin = new Padding(3, 4, 3, 4);
+            nudSaturacion.Minimum = new decimal(new int[] { 70, 0, 0, 0 });
             nudSaturacion.Name = "nudSaturacion";
-            nudSaturacion.Size = new Size(120, 25);
+            nudSaturacion.Size = new Size(137, 27);
             nudSaturacion.TabIndex = 22;
+            nudSaturacion.Value = new decimal(new int[] { 70, 0, 0, 0 });
             // 
             // nudDolor
             // 
-            nudDolor.Location = new Point(700, 255);
+            nudDolor.Location = new Point(800, 300);
+            nudDolor.Margin = new Padding(3, 4, 3, 4);
             nudDolor.Maximum = new decimal(new int[] { 10, 0, 0, 0 });
             nudDolor.Name = "nudDolor";
-            nudDolor.Size = new Size(120, 25);
+            nudDolor.Size = new Size(137, 27);
             nudDolor.TabIndex = 24;
             // 
             // cmbMotivo
             // 
             cmbMotivo.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbMotivo.Location = new Point(190, 216);
+            cmbMotivo.Location = new Point(217, 254);
+            cmbMotivo.Margin = new Padding(3, 4, 3, 4);
             cmbMotivo.Name = "cmbMotivo";
-            cmbMotivo.Size = new Size(210, 25);
+            cmbMotivo.Size = new Size(239, 28);
             cmbMotivo.TabIndex = 9;
             // 
             // cmbTipoPaciente
             // 
             cmbTipoPaciente.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbTipoPaciente.Location = new Point(190, 255);
+            cmbTipoPaciente.Location = new Point(217, 300);
+            cmbTipoPaciente.Margin = new Padding(3, 4, 3, 4);
             cmbTipoPaciente.Name = "cmbTipoPaciente";
-            cmbTipoPaciente.Size = new Size(210, 25);
+            cmbTipoPaciente.Size = new Size(239, 28);
             cmbTipoPaciente.TabIndex = 11;
             cmbTipoPaciente.SelectedIndexChanged += cmbTipoPaciente_SelectedIndexChanged;
             // 
             // chkRequiereCamilla
             // 
             chkRequiereCamilla.AutoSize = true;
-            chkRequiereCamilla.Location = new Point(190, 294);
+            chkRequiereCamilla.Location = new Point(217, 346);
+            chkRequiereCamilla.Margin = new Padding(3, 4, 3, 4);
             chkRequiereCamilla.Name = "chkRequiereCamilla";
-            chkRequiereCamilla.Size = new Size(123, 21);
+            chkRequiereCamilla.Size = new Size(142, 24);
             chkRequiereCamilla.TabIndex = 12;
             chkRequiereCamilla.Tag = "chkRequiereCamilla";
             chkRequiereCamilla.Text = "Requiere camilla";
@@ -296,9 +305,10 @@
             // 
             // btnGuardar
             // 
-            btnGuardar.Location = new Point(550, 340);
+            btnGuardar.Location = new Point(629, 400);
+            btnGuardar.Margin = new Padding(3, 4, 3, 4);
             btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(150, 43);
+            btnGuardar.Size = new Size(171, 51);
             btnGuardar.TabIndex = 25;
             btnGuardar.Tag = "btnGuardar";
             btnGuardar.Text = "Guardar";
@@ -307,9 +317,10 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(720, 340);
+            btnCancelar.Location = new Point(823, 400);
+            btnCancelar.Margin = new Padding(3, 4, 3, 4);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(150, 43);
+            btnCancelar.Size = new Size(171, 51);
             btnCancelar.TabIndex = 26;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
@@ -317,11 +328,10 @@
             // 
             // FrmRegistrarPaciente
             // 
-            AutoScaleDimensions = new SizeF(7F, 17F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(910, 419);
+            ClientSize = new Size(1040, 493);
             Controls.Add(lblTitulo);
-            Controls.Add(lblAyuda);
             Controls.Add(lblDni);
             Controls.Add(txtDni);
             Controls.Add(lblNombreApellido);
@@ -348,6 +358,7 @@
             Controls.Add(btnGuardar);
             Controls.Add(btnCancelar);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             Name = "FrmRegistrarPaciente";
             StartPosition = FormStartPosition.CenterParent;

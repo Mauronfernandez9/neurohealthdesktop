@@ -12,8 +12,9 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\tomic\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\tomic\\.nuget\\packages"
+      "C:\\Users\\Flor\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Flor\\.nuget\\packages",
+      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ],
     "configProperties": {
       "CSWINRT_USE_WINDOWS_UI_XAML_PROJECTIONS": false,
